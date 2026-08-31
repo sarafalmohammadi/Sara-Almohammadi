@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title data-en="Al-Rayan National Colleges — LEAP" data-ar="كليات الريان الأهلية — مؤتمر ليب">Al-Rayan National Colleges — LEAP</title>
+<meta name="description"
+      data-en="Booth display — scan to explore the digital profile of Al-Rayan National Colleges at LEAP."
+      data-ar="شاشة الجناح — امسح الرمز للاطلاع على الملف الرقمي لكليات الريان الأهلية في مؤتمر ليب."
+      content="Booth display — scan to explore the digital profile of Al-Rayan National Colleges at LEAP.">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#050F2E">
+<link rel="icon" href="logo-mark.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#091F50;
+  --navy-deep:#050F2E;
+  --gold:#BE9E58;
+  --gold-lit:#E0C489;
+}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;padding:0;height:100%}
+body{
+  background:var(--navy-deep);color:#fff;
+  font-family:"IBM Plex Sans","IBM Plex Sans Arabic",-apple-system,"Segoe UI",Tahoma,sans-serif;
+  -webkit-font-smoothing:antialiased;min-height:100vh;overflow-x:hidden;
+}
+:lang(ar) body{font-family:"IBM Plex Sans Arabic","IBM Plex Sans",-apple-system,"Segoe UI",Tahoma,sans-serif}
+body::before{
+  content:"";position:fixed;inset:0;pointer-events:none;
+  background:
+    radial-gradient(1100px 700px at 85% -10%,rgba(19,44,107,.95),transparent 70%),
+    linear-gradient(150deg,rgba(255,255,255,.045) 0 38%,transparent 38%);
+}
+.stage{
+  position:relative;min-height:100vh;
+  display:grid;
+  grid-template-columns:1fr minmax(300px,52vh);
+  grid-template-areas:"intro qr" "stats qr";
+  align-content:center;align-items:center;
+  gap:clamp(18px,3vh,34px) clamp(24px,4vw,64px);
+  padding:clamp(24px,4vh,56px) clamp(24px,5vw,80px);
+}
+.intro{grid-area:intro}
+.qr-panel{grid-area:qr}
+.stats{grid-area:stats}
+
+/* ----- identity ----- */
+.brand{background:#fff;border-radius:16px;padding:clamp(12px,1.8vh,20px) clamp(16px,2.2vw,26px);
+  display:inline-flex;box-shadow:0 16px 40px rgba(0,0,0,.35);margin-bottom:clamp(16px,3vh,30px)}
+.brand img{height:clamp(70px,10vh,140px);width:auto;display:block}
+h1{font-size:clamp(30px,5.4vh,62px);font-weight:600;letter-spacing:-.025em;margin:0;line-height:1.15}
+.name-alt{font-size:clamp(14px,1.9vh,22px);color:rgba(255,255,255,.55);margin:6px 0 0}
+.rule{width:clamp(120px,18vh,220px);height:2px;
+  background:linear-gradient(to right,var(--gold),rgba(190,158,88,0));margin:clamp(14px,2.4vh,26px) 0}
+:lang(ar) .rule{background:linear-gradient(to left,var(--gold),rgba(190,158,88,0))}
+.role{font-size:clamp(17px,2.6vh,30px);font-weight:500;color:var(--gold-lit);margin:0}
+.org{font-size:clamp(13px,1.8vh,20px);color:rgba(255,255,255,.72);margin:8px 0 0}
+.statement{
+  margin:clamp(16px,2.8vh,32px) 0 0;font-size:clamp(13px,1.8vh,19px);line-height:1.8;
+  color:rgba(255,255,255,.82);max-width:52ch;font-weight:300;
+  border-inline-start:2px solid rgba(190,158,88,.6);padding-inline-start:clamp(12px,1.4vw,18px)
+}
+
+/* ----- QR ----- */
+.qr-panel{display:flex;flex-direction:column;align-items:center;gap:clamp(10px,1.7vh,22px)}
+.qr-card{background:#fff;border-radius:clamp(18px,2.6vh,28px);padding:clamp(16px,2.4vh,26px);
+  box-shadow:0 26px 70px rgba(0,0,0,.42);display:block}
+.qr-card canvas{display:block;width:min(52vh,80vw);height:auto;image-rendering:pixelated}
+.scan{margin:0;text-align:center;font-size:clamp(15px,2.1vh,24px);font-weight:600;
+  display:flex;align-items:center;gap:10px}
+.scan svg{width:1.15em;height:1.15em;stroke:var(--gold-lit);flex:none}
+.scan-sub{margin:0;text-align:center;font-size:clamp(12px,1.6vh,16px);color:rgba(255,255,255,.6);
+  max-width:34ch;line-height:1.7}
+
+/* ----- metrics ----- */
+.counter{margin:0;display:flex;flex-wrap:wrap;gap:clamp(10px,1.6vw,18px)}
+.stat{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);
+  border-radius:16px;padding:clamp(12px,1.8vh,18px) clamp(16px,2vw,24px);min-width:118px;
+  backdrop-filter:blur(6px)}
+.stat .n{display:block;font-size:clamp(24px,4.2vh,46px);font-weight:600;line-height:1.1;
+  letter-spacing:-.02em;font-variant-numeric:tabular-nums;direction:ltr;text-align:start}
+.stat.lead .n{color:var(--gold-lit)}
+.stat .l{display:block;font-size:clamp(11px,1.4vh,14px);color:rgba(255,255,255,.6);margin-top:6px}
+.note{margin:14px 0 0;font-size:12.5px;color:rgba(255,255,255,.42);line-height:1.7;max-width:52ch}
+
+/* ----- screen tools ----- */
+.tools{position:fixed;top:14px;inset-inline-end:14px;display:flex;gap:8px;z-index:5}
+.tools button,.tools a{
+  border:1px solid rgba(255,255,255,.16);background:rgba(255,255,255,.07);color:rgba(255,255,255,.8);
+  font:inherit;font-size:12.5px;padding:8px 14px;border-radius:10px;cursor:pointer;
+  backdrop-filter:blur(6px);text-decoration:none;display:inline-flex;align-items:center}
+.tools button:hover,.tools a:hover{background:rgba(255,255,255,.14);color:#fff}
+
+/* ----- phones: allow scrolling ----- */
+@media (max-width:560px){
+  .stage{height:auto;min-height:100vh;grid-template-rows:auto auto auto}
+}
+@media (max-width:900px), (orientation:portrait){
+  .stage{
+    height:100vh;height:100dvh;
+    grid-template-columns:1fr;
+    grid-template-rows:auto minmax(0,1fr) auto;
+    grid-template-areas:"intro" "qr" "stats";
+    justify-items:center;text-align:center;align-content:stretch;
+    gap:clamp(14px,2.2vh,24px);
+    padding:clamp(56px,8vh,76px) clamp(18px,5vw,32px) clamp(28px,5vh,48px);
+  }
+  .qr-panel{align-self:stretch;justify-self:stretch;width:100%;justify-content:center;min-height:0}
+  .brand{margin-bottom:clamp(10px,1.8vh,18px)}
+  .brand img{height:clamp(52px,7vh,86px)}
+  h1{font-size:clamp(26px,4.2vh,44px)}
+  .rule{margin:clamp(10px,1.8vh,16px) auto}
+  .role{font-size:clamp(16px,2.4vh,24px)}
+  .statement{border:0;padding:0;margin-inline:auto;font-size:clamp(12px,1.6vh,15px)}
+  .counter{justify-content:center}
+  .stat{min-width:96px;padding:12px 16px}
+  .stat .n{font-size:clamp(21px,3.2vh,32px);text-align:center}
+  .stat .l{text-align:center}
+  .note{margin-inline:auto}
+  .qr-card canvas{width:min(70vw,38vh,420px)}
+  .scan{font-size:clamp(14px,1.9vh,20px)}
+}
+@media (orientation:portrait) and (max-height:1100px){
+  .statement{display:none}
+  .stage{padding-top:clamp(48px,6vh,64px)}
+  .stat{padding:10px 14px;min-width:88px}
+  .qr-card{padding:clamp(12px,1.8vh,20px)}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style>
+</head>
+<body>
+
+<div class="tools">
+  <button id="langBtn" type="button"></button>
+  <button id="fsBtn" type="button" data-en="Full screen" data-ar="ملء الشاشة">Full screen</button>
+  <a href="./" data-en="Digital card" data-ar="البطاقة الرقمية">Digital card</a>
+</div>
+
+<div class="stage">
+  <div class="intro">
+    <span class="brand"><img id="brandLogo" src="logo.png"
+      data-en-attr="alt|Al-Rayan National Colleges" data-ar-attr="alt|كليات الريان الأهلية"
+      alt="Al-Rayan National Colleges"></span>
+
+    <h1 data-en="Sara Almohammadi" data-ar="سارة المحمدي">Sara Almohammadi</h1>
+    <p class="name-alt" data-en="سارة المحمدي" data-ar="Sara Almohammadi">سارة المحمدي</p>
+
+    <div class="rule"></div>
+    <p class="role" data-en="Software Engineer" data-ar="مهندس برمجيات">Software Engineer</p>
+    <p class="org" data-en="Al-Rayan National Colleges · Madinah, Saudi Arabia"
+       data-ar="كليات الريان الأهلية · المدينة المنورة، المملكة العربية السعودية">Al-Rayan National Colleges · Madinah, Saudi Arabia</p>
+
+    <p class="statement"
+       data-en="We are seeking strategic partnerships and technology collaborations to accelerate digital transformation across our academic and operational ecosystem."
+       data-ar="نسعى إلى شراكات استراتيجية وتعاون تقني يسرّع التحول الرقمي في منظومتنا الأكاديمية والتشغيلية.">We are seeking strategic partnerships and technology collaborations to accelerate digital transformation across our academic and operational ecosystem.</p>
+  </div>
+
+  <div class="stats">
+    <div class="counter" id="counter" hidden>
+      <div class="stat lead"><span class="n" id="nQr">0</span>
+        <span class="l" data-en="QR scans" data-ar="عمليات مسح الرمز">QR scans</span></div>
+      <div class="stat"><span class="n" id="nPeople">0</span>
+        <span class="l" data-en="Unique visitors" data-ar="زوّار فريدون">Unique visitors</span></div>
+      <div class="stat"><span class="n" id="nToday">0</span>
+        <span class="l" data-en="Today" data-ar="اليوم">Today</span></div>
+      <div class="stat"><span class="n" id="nAll">0</span>
+        <span class="l" data-en="Total views" data-ar="إجمالي الزيارات">Total views</span></div>
+    </div>
+    <p class="note" id="note" hidden></p>
+  </div>
+
+  <div class="qr-panel">
+    <div class="qr-card"><canvas id="qr"></canvas></div>
+    <p class="scan">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 4h2.5a2 2 0 0 1 2 2v1M9.5 4H7a2 2 0 0 0-2 2v1M14.5 20H17a2 2 0 0 0 2-2v-1M9.5 20H7a2 2 0 0 1-2-2v-1"/><path d="M3 12h18"/></svg>
+      <span data-en="Scan to explore our digital profile" data-ar="امسح الرمز للاطلاع على ملفنا الرقمي">Scan to explore our digital profile</span>
+    </p>
+    <p class="scan-sub" id="scanSub"
+       data-en="Contact details, institutional profile, and our partnership priorities at LEAP."
+       data-ar="بيانات التواصل، والملف المؤسسي، وأولويات الشراكة في مؤتمر ليب.">Contact details, institutional profile, and our partnership priorities at LEAP.</p>
+  </div>
+</div>
+
+<script src="qrcode.js"></script>
+<script src="lang.js"></script>
+<script>
+const $ = s => document.querySelector(s);
+const T = (en, ar) => Lang.t(en, ar);
+
+/* ---------- QR: points at the digital card, tagged as a booth scan ---------- */
+function cardLink(){
+  const u = new URL("./", location.href);
+  u.searchParams.set("s", "qr");
+  return u.href;
+}
+function drawQR(text, canvas, scale){
+  const qr = qrcode(0, "M");
+  qr.addData(text); qr.make();
+  const n = qr.getModuleCount(), q = 4, size = (n + q*2) * scale;
+  canvas.width = size; canvas.height = size;
+  const c = canvas.getContext("2d");
+  c.fillStyle = "#fff"; c.fillRect(0,0,size,size);
+  c.fillStyle = "#091F50";
+  for(let r=0;r<n;r++) for(let col=0;col<n;col++)
+    if(qr.isDark(r,col)) c.fillRect((col+q)*scale, (r+q)*scale, scale, scale);
+}
+const live = location.protocol.startsWith("http");
+drawQR(live ? cardLink() : "https://example.com", $("#qr"), 10);
+
+/* ---------- Size the code to the space available in portrait ---------- */
+const portrait = matchMedia("(max-width:900px), (orientation:portrait)");
+function fitQR(){
+  const cv = $("#qr"), panel = document.querySelector(".qr-panel"), card = document.querySelector(".qr-card");
+  if(!portrait.matches || innerWidth < 560){ cv.style.width = ""; return; }
+  cv.style.width = "1px";                                     // collapse to measure the rest
+  const gap = parseFloat(getComputedStyle(panel).rowGap) || 0;
+  const kids = [...panel.children];
+  const rest = kids.reduce((h, el) => h + el.offsetHeight, 0) + gap * (kids.length - 1);
+  const freeH = panel.clientHeight - rest;
+  const freeW = panel.clientWidth - (card.offsetWidth - 1);
+  cv.style.width = Math.max(180, Math.min(freeW, freeH, 460)) + "px";
+}
+addEventListener("resize", fitQR);
+addEventListener("orientationchange", ()=> setTimeout(fitQR, 250));
+try{ document.fonts.ready.then(()=> setTimeout(fitQR, 60)); }catch{}
+
+/* ---------- Engagement metrics ---------- */
+const fmt = new Intl.NumberFormat("en-US");
+function paint(d){
+  $("#nQr").textContent     = fmt.format(d.qr || 0);
+  $("#nPeople").textContent = fmt.format(d.people || 0);
+  $("#nToday").textContent  = fmt.format(d.today || 0);
+  $("#nAll").textContent    = fmt.format(d.all || 0);
+  $("#counter").hidden = false;
+  $("#note").hidden = true;
+}
+let noteKey = null;
+function noteOnly(key){
+  noteKey = key;
+  $("#counter").hidden = true;
+  const n = $("#note");
+  n.textContent = key === "setup"
+    ? T("Metrics are not enabled. Connect an Upstash Redis store to the Vercel project and redeploy.",
+        "لم يتم تفعيل المؤشرات. اربط مخزن Upstash Redis بمشروع Vercel ثم أعد النشر.")
+    : T("Metrics are temporarily unavailable.", "المؤشرات غير متاحة مؤقتًا.");
+  n.hidden = false;
+}
+async function refresh(){
+  try{
+    const r = await fetch("/api/count", { cache:"no-store" });
+    const d = await r.json();
+    if(d.configured && d.ok !== false){ noteKey = null; paint(d); }
+    else noteOnly(d.configured ? "error" : "setup");
+  }catch{ noteOnly("error"); }
+}
+if(live){ refresh(); setInterval(refresh, 10000); }
+else{ noteOnly("setup"); }
+document.addEventListener("visibilitychange", ()=>{ if(!document.hidden && live) refresh(); });
+
+/* ---------- Keep the display awake · full screen ---------- */
+let lock = null;
+async function keepAwake(){
+  try{ if("wakeLock" in navigator) lock = await navigator.wakeLock.request("screen"); }catch{}
+}
+keepAwake();
+document.addEventListener("visibilitychange", ()=>{ if(!document.hidden && !lock) keepAwake(); });
+
+$("#fsBtn").addEventListener("click", async ()=>{
+  try{
+    if(document.fullscreenElement) await document.exitFullscreen();
+    else{ await document.documentElement.requestFullscreen(); keepAwake(); }
+  }catch{}
+});
+document.addEventListener("fullscreenchange", ()=>{
+  $("#fsBtn").textContent = document.fullscreenElement
+    ? T("Exit full screen", "إنهاء ملء الشاشة")
+    : T("Full screen", "ملء الشاشة");
+});
+
+/* ---------- Language ---------- */
+$("#langBtn").addEventListener("click", ()=> Lang.toggle());
+Lang.onChange(lang=>{
+  $("#langBtn").textContent = lang === "ar" ? "English" : "العربية";
+  if(!live) $("#scanSub").textContent =
+    T("Local preview — the code will point to the published profile once deployed.",
+      "معاينة محلية — سيشير الرمز إلى الملف المنشور بعد الرفع.");
+  if(noteKey) noteOnly(noteKey);
+  if(document.fullscreenElement) $("#fsBtn").textContent = T("Exit full screen", "إنهاء ملء الشاشة");
+  requestAnimationFrame(fitQR);
+});
+Lang.init();
+fitQR();
+</script>
+</body>
+</html>

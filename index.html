@@ -1,14 +1,19 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="en" dir="ltr">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>سارة المحمدي — كليات الريان الأهلية</title>
-<meta name="description" content="بطاقة تعريف رقمية — مهندس برمجيات، كليات الريان الأهلية، المدينة المنورة">
+<title data-en="Sara Almohammadi — Al-Rayan National Colleges" data-ar="سارة المحمدي — كليات الريان الأهلية">Sara Almohammadi — Al-Rayan National Colleges</title>
+<meta name="description"
+      data-en="Digital business card — Sara Almohammadi, Software Engineer, Al-Rayan National Colleges, Madinah. Partnership priorities at LEAP."
+      data-ar="بطاقة عمل رقمية — سارة المحمدي، مهندس برمجيات، كليات الريان الأهلية، المدينة المنورة. أولويات الشراكة في مؤتمر ليب."
+      content="Digital business card — Sara Almohammadi, Software Engineer, Al-Rayan National Colleges, Madinah. Partnership priorities at LEAP.">
 <meta name="theme-color" content="#091F50">
+<link rel="icon" href="logo-mark.png">
+<link rel="apple-touch-icon" href="logo-mark.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
 :root{
   --navy:#091F50;
@@ -28,60 +33,87 @@ html,body{margin:0;padding:0}
 body{
   background:var(--paper);
   color:var(--ink);
-  font-family:"IBM Plex Sans Arabic",-apple-system,"SF Arabic","Segoe UI",Tahoma,sans-serif;
+  font-family:"IBM Plex Sans","IBM Plex Sans Arabic",-apple-system,"Segoe UI",Tahoma,sans-serif;
   font-size:16px;line-height:1.6;
   -webkit-font-smoothing:antialiased;
   padding-bottom:env(safe-area-inset-bottom);
 }
 main{max-width:460px;margin:0 auto;background:var(--paper);min-height:100vh;
   box-shadow:0 0 70px rgba(9,31,80,.10)}
+:lang(ar) body,:lang(ar) main{font-family:"IBM Plex Sans Arabic","IBM Plex Sans",-apple-system,"Segoe UI",Tahoma,sans-serif}
 
 /* ---------- hero ---------- */
-.hero{position:relative;background:var(--navy);color:#fff;padding:34px var(--shell) 74px;overflow:hidden}
+.hero{position:relative;background:var(--navy);color:#fff;padding:26px var(--shell) 74px;overflow:hidden}
 .hero::before{content:"";position:absolute;inset:0;opacity:.5;
   background:
     linear-gradient(140deg,rgba(255,255,255,.05) 0 40%,transparent 40%),
     linear-gradient(28deg,rgba(255,255,255,.04) 0 55%,transparent 55%),
     radial-gradient(120% 90% at 80% 0%,var(--navy-soft) 0%,transparent 60%);
 }
-.hero::after{content:"";position:absolute;left:0;right:0;bottom:0;height:46px;background:var(--paper);
-  clip-path:polygon(0 100%,100% 22%,100% 100%);}
-.gold-edge{position:absolute;left:0;right:0;bottom:0;height:48px;background:var(--gold);
-  clip-path:polygon(0 100%,100% 20%,100% 24%,0 100%);}
+.hero::after{content:"";position:absolute;inset-inline:0;bottom:0;height:46px;background:var(--paper);
+  clip-path:polygon(0 100%,100% 22%,100% 100%)}
+.gold-edge{position:absolute;inset-inline:0;bottom:0;height:48px;background:var(--gold);
+  clip-path:polygon(0 100%,100% 20%,100% 24%,0 100%)}
 .hero-inner{position:relative;z-index:2}
 
-.crest-row{display:flex;align-items:center;gap:14px;margin-bottom:26px}
-.crest{width:58px;height:auto;display:block;flex:none;filter:drop-shadow(0 3px 8px rgba(0,0,0,.35))}
-.college{line-height:1.35}
-.college .ar{font-size:16px;font-weight:600;letter-spacing:-.01em}
-.college .en{font-size:11.5px;font-weight:400;color:var(--gold-lit);letter-spacing:.04em;direction:ltr;text-align:right}
+.hero-top{display:flex;align-items:flex-start;justify-content:space-between;gap:14px;margin-bottom:24px}
+.brand{background:#fff;border-radius:14px;padding:13px 18px;display:inline-flex;
+  box-shadow:0 8px 24px rgba(0,0,0,.24)}
+.brand img{height:84px;width:auto;display:block}
+.lang-btn{flex:none;border:1px solid rgba(255,255,255,.28);background:rgba(255,255,255,.08);
+  color:#fff;font:inherit;font-size:12.5px;font-weight:500;padding:8px 13px;border-radius:9px;cursor:pointer}
+.lang-btn:hover{background:rgba(255,255,255,.16)}
+.lang-btn:focus-visible{outline:2px solid var(--gold-lit);outline-offset:2px}
 
-h1{margin:0;font-size:34px;line-height:1.18;font-weight:700;letter-spacing:-.025em}
-.name-en{margin:4px 0 0;font-size:15px;font-weight:400;color:rgba(255,255,255,.62);direction:ltr;text-align:right;letter-spacing:.01em}
+h1{margin:0;font-size:33px;line-height:1.18;font-weight:600;letter-spacing:-.02em}
+.name-alt{margin:5px 0 0;font-size:15px;font-weight:400;color:rgba(255,255,255,.6)}
 .role{margin:14px 0 0;display:inline-block;font-size:14.5px;font-weight:500;color:var(--gold-lit);
   border-top:1px solid rgba(190,158,88,.55);padding-top:11px}
-.venue{margin:20px 0 0;font-size:13.5px;color:rgba(255,255,255,.72);font-weight:300}
-.venue b{font-weight:600;color:#fff}
+.delegate{margin:18px 0 0;font-size:13.5px;line-height:1.75;color:rgba(255,255,255,.75);font-weight:300}
 
 /* ---------- actions ---------- */
-.actions{padding:6px var(--shell) 0;display:grid;gap:10px}
+.actions{padding:8px var(--shell) 0;display:grid;gap:10px}
 .btn{display:flex;align-items:center;justify-content:center;gap:9px;width:100%;
-  border:0;border-radius:13px;padding:16px 14px;font:inherit;font-size:16px;font-weight:600;
-  cursor:pointer;transition:transform .12s ease,background .18s ease;font-family:inherit}
+  border:0;border-radius:13px;padding:16px 14px;font:inherit;font-size:15.5px;font-weight:600;
+  cursor:pointer;transition:transform .12s ease,background .18s ease;text-decoration:none}
 .btn:active{transform:scale(.985)}
 .btn:focus-visible{outline:3px solid var(--sky);outline-offset:2px}
 .btn-main{background:var(--navy);color:#fff}
 .btn-gold{background:var(--gold);color:#20180A}
-.btn-quiet{background:transparent;color:var(--navy);border:1.5px solid var(--line);font-weight:500;font-size:14.5px;padding:13px}
+.btn-line{background:#fff;color:var(--navy);border:1.5px solid var(--line)}
+.btn-quiet{background:transparent;color:var(--navy);border:1.5px solid var(--line);
+  font-weight:500;font-size:13.5px;padding:12px 8px}
 .btn svg{width:19px;height:19px;flex:none}
-.btn-row{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.btn-row{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
 
-/* ---------- contact ---------- */
+/* ---------- sections ---------- */
 section{padding:0 var(--shell)}
-.eyebrow{margin:34px 0 12px;font-size:12.5px;font-weight:600;color:var(--ink-soft);
-  display:flex;align-items:center;gap:9px}
+.eyebrow{margin:34px 0 12px;font-size:12px;font-weight:600;color:var(--ink-soft);
+  letter-spacing:.06em;text-transform:uppercase;display:flex;align-items:center;gap:9px}
+:lang(ar) .eyebrow{text-transform:none;letter-spacing:0}
 .eyebrow::after{content:"";flex:1;height:1px;background:var(--line)}
 
+.statement{
+  background:#fff;border:1px solid var(--line);border-inline-start:3px solid var(--gold);
+  border-radius:14px;padding:18px 20px;margin:0;
+  font-size:15px;line-height:1.75;font-weight:500;color:var(--navy)
+}
+.lede{margin:16px 0 0;font-size:14.5px;line-height:1.8;color:var(--ink-soft)}
+
+.colleges{list-style:none;margin:16px 0 0;padding:0;display:grid;gap:1px;
+  background:var(--line);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+.colleges li{background:#fff;padding:13px 16px;font-size:14.5px;font-weight:500}
+.colleges .sub{display:block;font-size:12.5px;font-weight:400;color:var(--ink-soft);margin-top:3px}
+
+.areas{list-style:none;margin:16px 0 0;padding:0;display:grid;gap:10px}
+.areas li{background:#fff;border:1px solid var(--line);border-radius:13px;padding:14px 16px}
+.areas .h{display:block;font-size:14px;font-weight:600;color:var(--navy);margin-bottom:4px}
+.areas .d{display:block;font-size:13.5px;line-height:1.7;color:var(--ink-soft)}
+
+.scope{margin:16px 0 0;background:#fff;border:1px solid var(--line);border-radius:14px;
+  padding:18px 20px;font-size:14px;line-height:1.8;color:var(--ink-soft)}
+
+/* ---------- contact ---------- */
 .rows{display:grid;gap:1px;background:var(--line);border:1px solid var(--line);border-radius:14px;overflow:hidden}
 .row{display:flex;align-items:center;gap:13px;background:#fff;padding:14px 15px;
   text-decoration:none;color:inherit}
@@ -91,21 +123,16 @@ section{padding:0 var(--shell)}
 .row .ic svg{width:17px;height:17px}
 .row .txt{min-width:0;flex:1}
 .row .lbl{display:block;font-size:11.5px;color:var(--ink-soft);line-height:1.4}
-.row .val{display:block;font-size:15px;font-weight:500;line-height:1.45;word-break:break-word}
-.ltr{direction:ltr;text-align:right;unicode-bidi:embed}
-.row .go{color:#B9BDC8;flex:none}
+.row .val{display:block;font-size:14.5px;font-weight:500;line-height:1.45;word-break:break-word}
+.row .go{color:#B9BDC8;flex:none;display:grid}
 .row .go svg{width:15px;height:15px}
+:lang(ar) .row .go svg{transform:scaleX(-1)}
+bdi{unicode-bidi:isolate}
 
-/* ---------- partnership ---------- */
-.pitch{background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px 18px 8px}
-.pitch p{margin:0 0 14px;font-size:14.5px;color:var(--ink-soft);line-height:1.75}
-.pitch ul{list-style:none;margin:0;padding:0}
-.pitch li{position:relative;padding:0 20px 13px 0;font-size:14.5px;line-height:1.6}
-.pitch li::before{content:"";position:absolute;right:0;top:9px;width:7px;height:7px;
-  border-radius:2px;background:var(--gold);transform:rotate(45deg)}
-
-.foot{padding:26px var(--shell) 40px;text-align:center;color:var(--ink-soft);font-size:12px;line-height:1.7}
-.foot .ltr{text-align:center}
+.foot{padding:30px var(--shell) 40px;text-align:center;color:var(--ink-soft);font-size:12px;line-height:1.8}
+.foot .booth-link{display:inline-block;margin-top:12px;color:var(--ink-soft);text-decoration:none;
+  font-size:11.5px;border-bottom:1px solid var(--line);padding-bottom:2px}
+.foot .booth-link:hover{color:var(--navy)}
 
 /* ---------- QR overlay ---------- */
 .overlay{position:fixed;inset:0;z-index:60;background:#fff;display:none;
@@ -113,22 +140,23 @@ section{padding:0 var(--shell)}
 .overlay.on{display:flex}
 .qr-box{padding:16px;background:#fff;border:1px solid var(--line);border-radius:18px}
 .qr-box canvas{display:block;width:min(80vw,330px);height:auto;image-rendering:pixelated}
-.qr-who{text-align:center;line-height:1.4;margin:0}
-.qr-who b{display:block;font-size:19px;font-weight:700;letter-spacing:-.02em}
+.qr-who{text-align:center;line-height:1.5;margin:0}
+.qr-who b{display:block;font-size:18px;font-weight:600;letter-spacing:-.01em}
 .qr-who span{font-size:12.5px;color:var(--ink-soft)}
-.qr-title{font-size:17px;font-weight:600;text-align:center;margin:0}
-.qr-sub{font-size:13.5px;color:var(--ink-soft);text-align:center;margin:0;max-width:300px;line-height:1.7}
+.qr-title{font-size:16.5px;font-weight:600;text-align:center;margin:0}
+.qr-sub{font-size:13px;color:var(--ink-soft);text-align:center;margin:0;max-width:310px;line-height:1.7}
 .seg{display:flex;background:#EDEAE1;border-radius:11px;padding:3px;gap:3px}
-.seg button{border:0;background:transparent;font:inherit;font-size:13.5px;font-weight:500;
+.seg button{border:0;background:transparent;font:inherit;font-size:13px;font-weight:500;
   padding:9px 15px;border-radius:9px;cursor:pointer;color:var(--ink-soft)}
 .seg button[aria-pressed="true"]{background:#fff;color:var(--navy);font-weight:600;
   box-shadow:0 1px 3px rgba(0,0,0,.09)}
-.close{position:absolute;top:calc(14px + env(safe-area-inset-top));left:16px;width:42px;height:42px;
-  border:0;background:#F0EEE7;border-radius:50%;font-size:21px;line-height:1;cursor:pointer;color:var(--ink)}
+.close{position:absolute;top:calc(14px + env(safe-area-inset-top));inset-inline-end:16px;
+  width:42px;height:42px;border:0;background:#F0EEE7;border-radius:50%;font-size:21px;
+  line-height:1;cursor:pointer;color:var(--ink)}
 
 .toast{position:fixed;bottom:26px;left:50%;transform:translateX(-50%) translateY(20px);
   background:var(--navy-deep);color:#fff;padding:12px 20px;border-radius:11px;font-size:14px;
-  opacity:0;pointer-events:none;transition:opacity .2s,transform .2s;z-index:80}
+  opacity:0;pointer-events:none;transition:opacity .2s,transform .2s;z-index:80;max-width:88vw;text-align:center}
 .toast.on{opacity:1;transform:translateX(-50%) translateY(0)}
 
 @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
@@ -136,2443 +164,206 @@ section{padding:0 var(--shell)}
 </head>
 <body>
 <main>
+
   <header class="hero">
     <div class="gold-edge"></div>
     <div class="hero-inner">
-      <div class="crest-row">
-        <img class="crest" id="crest" alt="شعار كليات الريان الأهلية" src="data:image/png;base64,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">
-        <div class="college">
-          <div class="ar">كليات الريان الأهلية</div>
-          <div class="en">Al‑Rayan National Colleges</div>
-        </div>
+      <div class="hero-top">
+        <span class="brand"><img id="brandLogo" src="logo.png"
+          data-en-attr="alt|Al-Rayan National Colleges" data-ar-attr="alt|كليات الريان الأهلية"
+          alt="Al-Rayan National Colleges"></span>
+        <button class="lang-btn" id="langBtn" type="button"></button>
       </div>
-      <h1>سارة المحمدي</h1>
-      <p class="name-en">Sara Almohammadi</p>
-      <p class="role">مهندس برمجيات · Software Engineer</p>
-      <p class="venue">ممثلة الكلية في <b>مؤتمر ليب</b> — للشراكات والاتفاقيات الأكاديمية والتقنية</p>
+
+      <h1 data-en="Sara Almohammadi" data-ar="سارة المحمدي">Sara Almohammadi</h1>
+      <p class="name-alt" data-en="سارة المحمدي" data-ar="Sara Almohammadi">سارة المحمدي</p>
+      <p class="role" data-en="Software Engineer" data-ar="مهندس برمجيات">Software Engineer</p>
+      <p class="delegate"
+         data-en="Representing Al-Rayan National Colleges at LEAP — strategic partnerships and technology collaboration."
+         data-ar="ممثلة كليات الريان الأهلية في مؤتمر ليب — الشراكات الاستراتيجية والتعاون التقني.">Representing Al-Rayan National Colleges at LEAP — strategic partnerships and technology collaboration.</p>
     </div>
   </header>
 
   <div class="actions">
-    <button class="btn btn-main" id="saveBtn">
+    <button class="btn btn-main" id="saveBtn" type="button">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M19 8v6M22 11h-6"/></svg>
-      حفظ في جهات الاتصال
+      <span data-en="Save Contact" data-ar="حفظ جهة الاتصال">Save Contact</span>
     </button>
-    <button class="btn btn-gold" id="qrBtn">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><path d="M14 14h3v3h-3zM20 14v.01M14 20v.01M20 20v.01M17 20v.01M20 17v.01"/></svg>
-      اعرض الباركود
-    </button>
+
+    <a class="btn btn-gold" href="#profile" id="exploreBtn">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21V9l9-6 9 6v12"/><path d="M9 21v-6h6v6"/></svg>
+      <span data-en="Explore Al-Rayan" data-ar="تعرّف على كليات الريان">Explore Al-Rayan</span>
+    </a>
+
+    <a class="btn btn-line" href="https://www.linkedin.com/in/sara-almohammadi-470b28178" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9h4v12H3zM10 9h3.8v1.7h.05c.53-.95 1.83-1.95 3.77-1.95 4.03 0 4.78 2.5 4.78 5.76V21h-4v-5.7c0-1.36-.03-3.1-1.95-3.1-1.95 0-2.25 1.47-2.25 3v5.8h-4Z"/></svg>
+      <span data-en="Connect on LinkedIn" data-ar="التواصل عبر لينكدإن">Connect on LinkedIn</span>
+    </a>
+
     <div class="btn-row">
-      <button class="btn btn-quiet" id="copyBtn">نسخ البريد</button>
-      <button class="btn btn-quiet" id="imgBtn">حفظ البطاقة صورة</button>
+      <button class="btn btn-quiet" id="qrBtn" type="button" data-en="QR Code" data-ar="رمز QR">QR Code</button>
+      <button class="btn btn-quiet" id="copyBtn" type="button" data-en="Copy Email" data-ar="نسخ البريد">Copy Email</button>
+      <button class="btn btn-quiet" id="imgBtn" type="button" data-en="Save Image" data-ar="حفظ كصورة">Save Image</button>
     </div>
   </div>
 
-  <section>
-    <h2 class="eyebrow">التواصل</h2>
-    <div class="rows">
-      <a class="row" id="rowMail" href="mailto:sf.almohammadi@amc.edu.sa">
-        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg></span>
-        <span class="txt"><span class="lbl">البريد الإلكتروني</span><span class="val ltr">sf.almohammadi@amc.edu.sa</span></span>
-        <span class="go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg></span>
-      </a>
-      <a class="row" href="tel:+966531610076">
-        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/></svg></span>
-        <span class="txt"><span class="lbl">الجوال</span><span class="val ltr">+966 53 161 0076</span></span>
-        <span class="go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg></span>
-      </a>
-      <a class="row" href="tel:+966148215555,1536">
-        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z"/></svg></span>
-        <span class="txt"><span class="lbl">هاتف الكلية · تحويلة 1536</span><span class="val ltr">+966 14 821 5555</span></span>
-        <span class="go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg></span>
-      </a>
-      <a class="row" id="rowMap" href="https://maps.google.com/?q=Al-Rayan+National+Colleges+Madinah" target="_blank" rel="noopener">
-        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></span>
-        <span class="txt"><span class="lbl">المقر · ص.ب 41411</span><span class="val">المدينة المنورة — شارع الهجرة</span></span>
-        <span class="go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg></span>
-      </a>
-    </div>
+  <section id="profile">
+    <h2 class="eyebrow" data-en="Institutional Profile" data-ar="نبذة مؤسسية">Institutional Profile</h2>
+    <p class="statement"
+       data-en="We are seeking strategic partnerships and technology collaborations to accelerate digital transformation across our academic and operational ecosystem."
+       data-ar="نسعى إلى شراكات استراتيجية وتعاون تقني يسرّع التحول الرقمي في منظومتنا الأكاديمية والتشغيلية.">We are seeking strategic partnerships and technology collaborations to accelerate digital transformation across our academic and operational ecosystem.</p>
+    <p class="lede"
+       data-en="Al-Rayan National Colleges is a private higher education institution in Madinah, Saudi Arabia, specializing in health sciences education across three colleges."
+       data-ar="كليات الريان الأهلية مؤسسة تعليم عالٍ أهلية في المدينة المنورة، متخصصة في تعليم العلوم الصحية عبر ثلاث كليات.">Al-Rayan National Colleges is a private higher education institution in Madinah, Saudi Arabia, specializing in health sciences education across three colleges.</p>
+    <ul class="colleges">
+      <li data-en="College of Nursing" data-ar="كلية التمريض">College of Nursing</li>
+      <li data-en="College of Medicine" data-ar="كلية الطب">College of Medicine</li>
+      <li>
+        <span data-en="College of Health Sciences" data-ar="كلية العلوم الصحية">College of Health Sciences</span>
+        <span class="sub" data-en="Anesthesia · Pharmacy" data-ar="التخدير · الصيدلة">Anesthesia · Pharmacy</span>
+      </li>
+    </ul>
   </section>
 
   <section>
-    <h2 class="eyebrow">ما الذي نبحث عنه في ليب</h2>
-    <div class="pitch">
-      <p>كليات الريان الأهلية في المدينة المنورة — تعليم جامعي في الحاسب وإدارة الأعمال والعلوم الصحية. نبحث عن شركاء يوصلون طلبتنا بسوق العمل، ويطوّرون البنية التقنية للحرم الجامعي.</p>
-      <ul>
-        <li>تدريب تعاوني وفرص توظيف للخريجين</li>
-        <li>شهادات احترافية ومسارات أكاديمية معتمدة</li>
-        <li>رخص برمجية ومنصات تعليمية للجامعات</li>
-        <li>مشاريع تخرج ومختبرات مشتركة مع الصناعة</li>
-        <li>ورش عمل ومتحدثين داخل الحرم الجامعي</li>
-      </ul>
+    <h2 class="eyebrow" data-en="Areas of Collaboration" data-ar="مجالات التعاون">Areas of Collaboration</h2>
+    <ul class="areas">
+      <li>
+        <span class="h" data-en="Technology Infrastructure" data-ar="البنية التحتية التقنية">Technology Infrastructure</span>
+        <span class="d" data-en="Modernization of campus IT infrastructure, core systems, and network capacity."
+              data-ar="تحديث البنية التقنية والأنظمة الأساسية وقدرات الشبكة في الحرم الجامعي.">Modernization of campus IT infrastructure, core systems, and network capacity.</span>
+      </li>
+      <li>
+        <span class="h" data-en="Cybersecurity and Compliance" data-ar="الأمن السيبراني والامتثال">Cybersecurity and Compliance</span>
+        <span class="d" data-en="Strengthening our cybersecurity posture and alignment with applicable regulatory standards."
+              data-ar="تعزيز منظومة الأمن السيبراني والامتثال للمعايير والمتطلبات ذات العلاقة.">Strengthening our cybersecurity posture and alignment with applicable regulatory standards.</span>
+      </li>
+      <li>
+        <span class="h" data-en="Workforce Capability" data-ar="تمكين الكوادر">Workforce Capability</span>
+        <span class="d" data-en="Development and enablement of academic, administrative, engineering, and technical staff."
+              data-ar="تطوير وتمكين الكوادر الأكاديمية والإدارية والهندسية والتقنية.">Development and enablement of academic, administrative, engineering, and technical staff.</span>
+      </li>
+      <li>
+        <span class="h" data-en="Professional Certification" data-ar="الشهادات المهنية">Professional Certification</span>
+        <span class="d" data-en="Support for professional certification programs and specialized accreditation tracks."
+              data-ar="دعم برامج الشهادات المهنية ومسارات الاعتماد المتخصصة.">Support for professional certification programs and specialized accreditation tracks.</span>
+      </li>
+      <li>
+        <span class="h" data-en="Training and Workshops" data-ar="التدريب وورش العمل">Training and Workshops</span>
+        <span class="d" data-en="Design and delivery of specialized workshops, training programs, and courses."
+              data-ar="تصميم وتنفيذ ورش العمل والبرامج التدريبية والدورات المتخصصة.">Design and delivery of specialized workshops, training programs, and courses.</span>
+      </li>
+      <li>
+        <span class="h" data-en="Education Technology" data-ar="تقنيات التعليم">Education Technology</span>
+        <span class="d" data-en="Partnerships and agreements in modern education technology and digital learning platforms."
+              data-ar="شراكات واتفاقيات في مجال تقنيات التعليم الحديثة ومنصات التعلم الرقمي.">Partnerships and agreements in modern education technology and digital learning platforms.</span>
+      </li>
+      <li>
+        <span class="h" data-en="Digital and Cyber Awareness" data-ar="الوعي الرقمي والسيبراني">Digital and Cyber Awareness</span>
+        <span class="d" data-en="Programs that advance digital literacy and cybersecurity awareness among staff and students."
+              data-ar="برامج ترفع مستوى الثقافة الرقمية والوعي بالأمن السيبراني لدى المنسوبين والطلاب.">Programs that advance digital literacy and cybersecurity awareness among staff and students.</span>
+      </li>
+      <li>
+        <span class="h" data-en="Artificial Intelligence" data-ar="الذكاء الاصطناعي">Artificial Intelligence</span>
+        <span class="d" data-en="Driving the adoption of AI-enabled solutions to transform learning, streamline operations, and enhance the student experience."
+              data-ar="قيادة تبنّي الحلول القائمة على الذكاء الاصطناعي لتطوير التعليم، ورفع كفاءة العمليات، وتحسين تجربة الطالب.">Driving the adoption of AI-enabled solutions to transform learning, streamline operations, and enhance the student experience.</span>
+      </li>
+    </ul>
+  </section>
+
+  <section>
+    <h2 class="eyebrow" data-en="Partnership Scope" data-ar="نطاق الشراكة">Partnership Scope</h2>
+    <p class="scope"
+       data-en="Partners engage with a defined institutional scope — three colleges across nursing, medicine, and health sciences — through a single point of coordination for pilot initiatives, joint programs, and long-term agreements."
+       data-ar="يتعامل الشركاء مع نطاق مؤسسي واضح — ثلاث كليات في التمريض والطب والعلوم الصحية — عبر جهة تنسيق واحدة للمبادرات التجريبية والبرامج المشتركة والاتفاقيات طويلة الأمد.">Partners engage with a defined institutional scope — three colleges across nursing, medicine, and health sciences — through a single point of coordination for pilot initiatives, joint programs, and long-term agreements.</p>
+  </section>
+
+  <section>
+    <h2 class="eyebrow" data-en="Contact" data-ar="معلومات التواصل">Contact</h2>
+    <div class="rows">
+      <a class="row" id="rowMail" href="mailto:sf.almohammadi@amc.edu.sa">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg></span>
+        <span class="txt"><span class="lbl" data-en="Email" data-ar="البريد الإلكتروني">Email</span>
+          <span class="val"><bdi>sf.almohammadi@amc.edu.sa</bdi></span></span>
+        <span class="go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg></span>
+      </a>
+      <a class="row" href="tel:+966531610076">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/></svg></span>
+        <span class="txt"><span class="lbl" data-en="Mobile" data-ar="الجوال">Mobile</span>
+          <span class="val"><bdi>+966 53 161 0076</bdi></span></span>
+        <span class="go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg></span>
+      </a>
+      <a class="row" href="tel:+966148215555,1536">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z"/></svg></span>
+        <span class="txt"><span class="lbl" data-en="Office · ext. 1536" data-ar="هاتف الكليات · تحويلة 1536">Office · ext. 1536</span>
+          <span class="val"><bdi>+966 14 821 5555</bdi></span></span>
+        <span class="go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg></span>
+      </a>
+      <a class="row" href="https://www.linkedin.com/in/sara-almohammadi-470b28178" target="_blank" rel="noopener">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9h4v12H3zM10 9h3.8v1.7h.05c.53-.95 1.83-1.95 3.77-1.95 4.03 0 4.78 2.5 4.78 5.76V21h-4v-5.7c0-1.36-.03-3.1-1.95-3.1-1.95 0-2.25 1.47-2.25 3v5.8h-4Z"/></svg></span>
+        <span class="txt"><span class="lbl" data-en="LinkedIn" data-ar="لينكدإن">LinkedIn</span>
+          <span class="val" data-en="Sara Almohammadi" data-ar="سارة المحمدي">Sara Almohammadi</span></span>
+        <span class="go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg></span>
+      </a>
+      <a class="row" href="https://maps.google.com/?q=Al-Rayan+National+Colleges+Madinah" target="_blank" rel="noopener">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></span>
+        <span class="txt"><span class="lbl" data-en="Campus · P.O. Box 41411" data-ar="المقر · ص.ب 41411">Campus · P.O. Box 41411</span>
+          <span class="val" data-en="Hijrah Street, Madinah, Saudi Arabia" data-ar="شارع الهجرة، المدينة المنورة، المملكة العربية السعودية">Hijrah Street, Madinah, Saudi Arabia</span></span>
+        <span class="go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg></span>
+      </a>
     </div>
   </section>
 
   <p class="foot">
-    كليات الريان الأهلية<br>
-    <span class="ltr">Al‑Rayan National Colleges · Madinah</span>
+    <span data-en="Al-Rayan National Colleges" data-ar="كليات الريان الأهلية">Al-Rayan National Colleges</span><br>
+    <span data-en="Madinah, Saudi Arabia" data-ar="المدينة المنورة، المملكة العربية السعودية">Madinah, Saudi Arabia</span><br>
+    <a class="booth-link" href="booth.html" data-en="Booth display" data-ar="شاشة الجناح">Booth display</a>
   </p>
 </main>
 
-<div class="overlay" id="overlay" role="dialog" aria-modal="true" aria-label="الباركود">
-  <button class="close" id="closeBtn" aria-label="إغلاق">✕</button>
-  <p class="qr-who"><b>سارة المحمدي</b><span>كليات الريان الأهلية</span></p>
+<div class="overlay" id="overlay" role="dialog" aria-modal="true"
+     data-en-attr="aria-label|QR code" data-ar-attr="aria-label|رمز QR">
+  <button class="close" id="closeBtn"
+          data-en-attr="aria-label|Close" data-ar-attr="aria-label|إغلاق">✕</button>
+  <p class="qr-who">
+    <b data-en="Sara Almohammadi" data-ar="سارة المحمدي">Sara Almohammadi</b>
+    <span data-en="Al-Rayan National Colleges" data-ar="كليات الريان الأهلية">Al-Rayan National Colleges</span>
+  </p>
   <div class="seg" role="group">
-    <button id="tabCard" aria-pressed="true">بطاقة جهة اتصال</button>
-    <button id="tabLink" aria-pressed="false">رابط الصفحة</button>
+    <button id="tabCard" type="button" aria-pressed="true" data-en="Contact card" data-ar="بطاقة الاتصال">Contact card</button>
+    <button id="tabLink" type="button" aria-pressed="false" data-en="Digital profile" data-ar="الملف الرقمي">Digital profile</button>
   </div>
   <div class="qr-box"><canvas id="qr"></canvas></div>
-  <p class="qr-title" id="qrTitle">امسح الكود لحفظ بياناتي</p>
-  <p class="qr-sub" id="qrSub">وجّه كاميرا الجوال نحو الكود — سيظهر خيار إضافة جهة الاتصال مباشرة. ارفع إضاءة الشاشة لمسح أسرع.</p>
+  <p class="qr-title" id="qrTitle"></p>
+  <p class="qr-sub" id="qrSub"></p>
 </div>
 
 <div class="toast" id="toast"></div>
 <canvas id="export" width="1080" height="1350" hidden></canvas>
 
-<script>//---------------------------------------------------------------------
-//
-// QR Code Generator for JavaScript
-//
-// Copyright (c) 2009 Kazuhiko Arase
-//
-// URL: http://www.d-project.com/
-//
-// Licensed under the MIT license:
-//  http://www.opensource.org/licenses/mit-license.php
-//
-// The word 'QR Code' is registered trademark of
-// DENSO WAVE INCORPORATED
-//  http://www.denso-wave.com/qrcode/faqpatent-e.html
-//
-//---------------------------------------------------------------------
-
-var qrcode = function() {
-
-  //---------------------------------------------------------------------
-  // qrcode
-  //---------------------------------------------------------------------
-
-  /**
-   * qrcode
-   * @param typeNumber 1 to 40
-   * @param errorCorrectionLevel 'L','M','Q','H'
-   */
-  var qrcode = function(typeNumber, errorCorrectionLevel) {
-
-    var PAD0 = 0xEC;
-    var PAD1 = 0x11;
-
-    var _typeNumber = typeNumber;
-    var _errorCorrectionLevel = QRErrorCorrectionLevel[errorCorrectionLevel];
-    var _modules = null;
-    var _moduleCount = 0;
-    var _dataCache = null;
-    var _dataList = [];
-
-    var _this = {};
-
-    var makeImpl = function(test, maskPattern) {
-
-      _moduleCount = _typeNumber * 4 + 17;
-      _modules = function(moduleCount) {
-        var modules = new Array(moduleCount);
-        for (var row = 0; row < moduleCount; row += 1) {
-          modules[row] = new Array(moduleCount);
-          for (var col = 0; col < moduleCount; col += 1) {
-            modules[row][col] = null;
-          }
-        }
-        return modules;
-      }(_moduleCount);
-
-      setupPositionProbePattern(0, 0);
-      setupPositionProbePattern(_moduleCount - 7, 0);
-      setupPositionProbePattern(0, _moduleCount - 7);
-      setupPositionAdjustPattern();
-      setupTimingPattern();
-      setupTypeInfo(test, maskPattern);
-
-      if (_typeNumber >= 7) {
-        setupTypeNumber(test);
-      }
-
-      if (_dataCache == null) {
-        _dataCache = createData(_typeNumber, _errorCorrectionLevel, _dataList);
-      }
-
-      mapData(_dataCache, maskPattern);
-    };
-
-    var setupPositionProbePattern = function(row, col) {
-
-      for (var r = -1; r <= 7; r += 1) {
-
-        if (row + r <= -1 || _moduleCount <= row + r) continue;
-
-        for (var c = -1; c <= 7; c += 1) {
-
-          if (col + c <= -1 || _moduleCount <= col + c) continue;
-
-          if ( (0 <= r && r <= 6 && (c == 0 || c == 6) )
-              || (0 <= c && c <= 6 && (r == 0 || r == 6) )
-              || (2 <= r && r <= 4 && 2 <= c && c <= 4) ) {
-            _modules[row + r][col + c] = true;
-          } else {
-            _modules[row + r][col + c] = false;
-          }
-        }
-      }
-    };
-
-    var getBestMaskPattern = function() {
-
-      var minLostPoint = 0;
-      var pattern = 0;
-
-      for (var i = 0; i < 8; i += 1) {
-
-        makeImpl(true, i);
-
-        var lostPoint = QRUtil.getLostPoint(_this);
-
-        if (i == 0 || minLostPoint > lostPoint) {
-          minLostPoint = lostPoint;
-          pattern = i;
-        }
-      }
-
-      return pattern;
-    };
-
-    var setupTimingPattern = function() {
-
-      for (var r = 8; r < _moduleCount - 8; r += 1) {
-        if (_modules[r][6] != null) {
-          continue;
-        }
-        _modules[r][6] = (r % 2 == 0);
-      }
-
-      for (var c = 8; c < _moduleCount - 8; c += 1) {
-        if (_modules[6][c] != null) {
-          continue;
-        }
-        _modules[6][c] = (c % 2 == 0);
-      }
-    };
-
-    var setupPositionAdjustPattern = function() {
-
-      var pos = QRUtil.getPatternPosition(_typeNumber);
-
-      for (var i = 0; i < pos.length; i += 1) {
-
-        for (var j = 0; j < pos.length; j += 1) {
-
-          var row = pos[i];
-          var col = pos[j];
-
-          if (_modules[row][col] != null) {
-            continue;
-          }
-
-          for (var r = -2; r <= 2; r += 1) {
-
-            for (var c = -2; c <= 2; c += 1) {
-
-              if (r == -2 || r == 2 || c == -2 || c == 2
-                  || (r == 0 && c == 0) ) {
-                _modules[row + r][col + c] = true;
-              } else {
-                _modules[row + r][col + c] = false;
-              }
-            }
-          }
-        }
-      }
-    };
-
-    var setupTypeNumber = function(test) {
-
-      var bits = QRUtil.getBCHTypeNumber(_typeNumber);
-
-      for (var i = 0; i < 18; i += 1) {
-        var mod = (!test && ( (bits >> i) & 1) == 1);
-        _modules[Math.floor(i / 3)][i % 3 + _moduleCount - 8 - 3] = mod;
-      }
-
-      for (var i = 0; i < 18; i += 1) {
-        var mod = (!test && ( (bits >> i) & 1) == 1);
-        _modules[i % 3 + _moduleCount - 8 - 3][Math.floor(i / 3)] = mod;
-      }
-    };
-
-    var setupTypeInfo = function(test, maskPattern) {
-
-      var data = (_errorCorrectionLevel << 3) | maskPattern;
-      var bits = QRUtil.getBCHTypeInfo(data);
-
-      // vertical
-      for (var i = 0; i < 15; i += 1) {
-
-        var mod = (!test && ( (bits >> i) & 1) == 1);
-
-        if (i < 6) {
-          _modules[i][8] = mod;
-        } else if (i < 8) {
-          _modules[i + 1][8] = mod;
-        } else {
-          _modules[_moduleCount - 15 + i][8] = mod;
-        }
-      }
-
-      // horizontal
-      for (var i = 0; i < 15; i += 1) {
-
-        var mod = (!test && ( (bits >> i) & 1) == 1);
-
-        if (i < 8) {
-          _modules[8][_moduleCount - i - 1] = mod;
-        } else if (i < 9) {
-          _modules[8][15 - i - 1 + 1] = mod;
-        } else {
-          _modules[8][15 - i - 1] = mod;
-        }
-      }
-
-      // fixed module
-      _modules[_moduleCount - 8][8] = (!test);
-    };
-
-    var mapData = function(data, maskPattern) {
-
-      var inc = -1;
-      var row = _moduleCount - 1;
-      var bitIndex = 7;
-      var byteIndex = 0;
-      var maskFunc = QRUtil.getMaskFunction(maskPattern);
-
-      for (var col = _moduleCount - 1; col > 0; col -= 2) {
-
-        if (col == 6) col -= 1;
-
-        while (true) {
-
-          for (var c = 0; c < 2; c += 1) {
-
-            if (_modules[row][col - c] == null) {
-
-              var dark = false;
-
-              if (byteIndex < data.length) {
-                dark = ( ( (data[byteIndex] >>> bitIndex) & 1) == 1);
-              }
-
-              var mask = maskFunc(row, col - c);
-
-              if (mask) {
-                dark = !dark;
-              }
-
-              _modules[row][col - c] = dark;
-              bitIndex -= 1;
-
-              if (bitIndex == -1) {
-                byteIndex += 1;
-                bitIndex = 7;
-              }
-            }
-          }
-
-          row += inc;
-
-          if (row < 0 || _moduleCount <= row) {
-            row -= inc;
-            inc = -inc;
-            break;
-          }
-        }
-      }
-    };
-
-    var createBytes = function(buffer, rsBlocks) {
-
-      var offset = 0;
-
-      var maxDcCount = 0;
-      var maxEcCount = 0;
-
-      var dcdata = new Array(rsBlocks.length);
-      var ecdata = new Array(rsBlocks.length);
-
-      for (var r = 0; r < rsBlocks.length; r += 1) {
-
-        var dcCount = rsBlocks[r].dataCount;
-        var ecCount = rsBlocks[r].totalCount - dcCount;
-
-        maxDcCount = Math.max(maxDcCount, dcCount);
-        maxEcCount = Math.max(maxEcCount, ecCount);
-
-        dcdata[r] = new Array(dcCount);
-
-        for (var i = 0; i < dcdata[r].length; i += 1) {
-          dcdata[r][i] = 0xff & buffer.getBuffer()[i + offset];
-        }
-        offset += dcCount;
-
-        var rsPoly = QRUtil.getErrorCorrectPolynomial(ecCount);
-        var rawPoly = qrPolynomial(dcdata[r], rsPoly.getLength() - 1);
-
-        var modPoly = rawPoly.mod(rsPoly);
-        ecdata[r] = new Array(rsPoly.getLength() - 1);
-        for (var i = 0; i < ecdata[r].length; i += 1) {
-          var modIndex = i + modPoly.getLength() - ecdata[r].length;
-          ecdata[r][i] = (modIndex >= 0)? modPoly.getAt(modIndex) : 0;
-        }
-      }
-
-      var totalCodeCount = 0;
-      for (var i = 0; i < rsBlocks.length; i += 1) {
-        totalCodeCount += rsBlocks[i].totalCount;
-      }
-
-      var data = new Array(totalCodeCount);
-      var index = 0;
-
-      for (var i = 0; i < maxDcCount; i += 1) {
-        for (var r = 0; r < rsBlocks.length; r += 1) {
-          if (i < dcdata[r].length) {
-            data[index] = dcdata[r][i];
-            index += 1;
-          }
-        }
-      }
-
-      for (var i = 0; i < maxEcCount; i += 1) {
-        for (var r = 0; r < rsBlocks.length; r += 1) {
-          if (i < ecdata[r].length) {
-            data[index] = ecdata[r][i];
-            index += 1;
-          }
-        }
-      }
-
-      return data;
-    };
-
-    var createData = function(typeNumber, errorCorrectionLevel, dataList) {
-
-      var rsBlocks = QRRSBlock.getRSBlocks(typeNumber, errorCorrectionLevel);
-
-      var buffer = qrBitBuffer();
-
-      for (var i = 0; i < dataList.length; i += 1) {
-        var data = dataList[i];
-        buffer.put(data.getMode(), 4);
-        buffer.put(data.getLength(), QRUtil.getLengthInBits(data.getMode(), typeNumber) );
-        data.write(buffer);
-      }
-
-      // calc num max data.
-      var totalDataCount = 0;
-      for (var i = 0; i < rsBlocks.length; i += 1) {
-        totalDataCount += rsBlocks[i].dataCount;
-      }
-
-      if (buffer.getLengthInBits() > totalDataCount * 8) {
-        throw 'code length overflow. ('
-          + buffer.getLengthInBits()
-          + '>'
-          + totalDataCount * 8
-          + ')';
-      }
-
-      // end code
-      if (buffer.getLengthInBits() + 4 <= totalDataCount * 8) {
-        buffer.put(0, 4);
-      }
-
-      // padding
-      while (buffer.getLengthInBits() % 8 != 0) {
-        buffer.putBit(false);
-      }
-
-      // padding
-      while (true) {
-
-        if (buffer.getLengthInBits() >= totalDataCount * 8) {
-          break;
-        }
-        buffer.put(PAD0, 8);
-
-        if (buffer.getLengthInBits() >= totalDataCount * 8) {
-          break;
-        }
-        buffer.put(PAD1, 8);
-      }
-
-      return createBytes(buffer, rsBlocks);
-    };
-
-    _this.addData = function(data, mode) {
-
-      mode = mode || 'Byte';
-
-      var newData = null;
-
-      switch(mode) {
-      case 'Numeric' :
-        newData = qrNumber(data);
-        break;
-      case 'Alphanumeric' :
-        newData = qrAlphaNum(data);
-        break;
-      case 'Byte' :
-        newData = qr8BitByte(data);
-        break;
-      case 'Kanji' :
-        newData = qrKanji(data);
-        break;
-      default :
-        throw 'mode:' + mode;
-      }
-
-      _dataList.push(newData);
-      _dataCache = null;
-    };
-
-    _this.isDark = function(row, col) {
-      if (row < 0 || _moduleCount <= row || col < 0 || _moduleCount <= col) {
-        throw row + ',' + col;
-      }
-      return _modules[row][col];
-    };
-
-    _this.getModuleCount = function() {
-      return _moduleCount;
-    };
-
-    _this.make = function() {
-      if (_typeNumber < 1) {
-        var typeNumber = 1;
-
-        for (; typeNumber < 40; typeNumber++) {
-          var rsBlocks = QRRSBlock.getRSBlocks(typeNumber, _errorCorrectionLevel);
-          var buffer = qrBitBuffer();
-
-          for (var i = 0; i < _dataList.length; i++) {
-            var data = _dataList[i];
-            buffer.put(data.getMode(), 4);
-            buffer.put(data.getLength(), QRUtil.getLengthInBits(data.getMode(), typeNumber) );
-            data.write(buffer);
-          }
-
-          var totalDataCount = 0;
-          for (var i = 0; i < rsBlocks.length; i++) {
-            totalDataCount += rsBlocks[i].dataCount;
-          }
-
-          if (buffer.getLengthInBits() <= totalDataCount * 8) {
-            break;
-          }
-        }
-
-        _typeNumber = typeNumber;
-      }
-
-      makeImpl(false, getBestMaskPattern() );
-    };
-
-    _this.createTableTag = function(cellSize, margin) {
-
-      cellSize = cellSize || 2;
-      margin = (typeof margin == 'undefined')? cellSize * 4 : margin;
-
-      var qrHtml = '';
-
-      qrHtml += '<table style="';
-      qrHtml += ' border-width: 0px; border-style: none;';
-      qrHtml += ' border-collapse: collapse;';
-      qrHtml += ' padding: 0px; margin: ' + margin + 'px;';
-      qrHtml += '">';
-      qrHtml += '<tbody>';
-
-      for (var r = 0; r < _this.getModuleCount(); r += 1) {
-
-        qrHtml += '<tr>';
-
-        for (var c = 0; c < _this.getModuleCount(); c += 1) {
-          qrHtml += '<td style="';
-          qrHtml += ' border-width: 0px; border-style: none;';
-          qrHtml += ' border-collapse: collapse;';
-          qrHtml += ' padding: 0px; margin: 0px;';
-          qrHtml += ' width: ' + cellSize + 'px;';
-          qrHtml += ' height: ' + cellSize + 'px;';
-          qrHtml += ' background-color: ';
-          qrHtml += _this.isDark(r, c)? '#000000' : '#ffffff';
-          qrHtml += ';';
-          qrHtml += '"/>';
-        }
-
-        qrHtml += '</tr>';
-      }
-
-      qrHtml += '</tbody>';
-      qrHtml += '</table>';
-
-      return qrHtml;
-    };
-
-    _this.createSvgTag = function(cellSize, margin, alt, title) {
-
-      var opts = {};
-      if (typeof arguments[0] == 'object') {
-        // Called by options.
-        opts = arguments[0];
-        // overwrite cellSize and margin.
-        cellSize = opts.cellSize;
-        margin = opts.margin;
-        alt = opts.alt;
-        title = opts.title;
-      }
-
-      cellSize = cellSize || 2;
-      margin = (typeof margin == 'undefined')? cellSize * 4 : margin;
-
-      // Compose alt property surrogate
-      alt = (typeof alt === 'string') ? {text: alt} : alt || {};
-      alt.text = alt.text || null;
-      alt.id = (alt.text) ? alt.id || 'qrcode-description' : null;
-
-      // Compose title property surrogate
-      title = (typeof title === 'string') ? {text: title} : title || {};
-      title.text = title.text || null;
-      title.id = (title.text) ? title.id || 'qrcode-title' : null;
-
-      var size = _this.getModuleCount() * cellSize + margin * 2;
-      var c, mc, r, mr, qrSvg='', rect;
-
-      rect = 'l' + cellSize + ',0 0,' + cellSize +
-        ' -' + cellSize + ',0 0,-' + cellSize + 'z ';
-
-      qrSvg += '<svg version="1.1" xmlns="http://www.w3.org/2000/svg"';
-      qrSvg += !opts.scalable ? ' width="' + size + 'px" height="' + size + 'px"' : '';
-      qrSvg += ' viewBox="0 0 ' + size + ' ' + size + '" ';
-      qrSvg += ' preserveAspectRatio="xMinYMin meet"';
-      qrSvg += (title.text || alt.text) ? ' role="img" aria-labelledby="' +
-          escapeXml([title.id, alt.id].join(' ').trim() ) + '"' : '';
-      qrSvg += '>';
-      qrSvg += (title.text) ? '<title id="' + escapeXml(title.id) + '">' +
-          escapeXml(title.text) + '</title>' : '';
-      qrSvg += (alt.text) ? '<description id="' + escapeXml(alt.id) + '">' +
-          escapeXml(alt.text) + '</description>' : '';
-      qrSvg += '<rect width="100%" height="100%" fill="white" cx="0" cy="0"/>';
-      qrSvg += '<path d="';
-
-      for (r = 0; r < _this.getModuleCount(); r += 1) {
-        mr = r * cellSize + margin;
-        for (c = 0; c < _this.getModuleCount(); c += 1) {
-          if (_this.isDark(r, c) ) {
-            mc = c*cellSize+margin;
-            qrSvg += 'M' + mc + ',' + mr + rect;
-          }
-        }
-      }
-
-      qrSvg += '" stroke="transparent" fill="black"/>';
-      qrSvg += '</svg>';
-
-      return qrSvg;
-    };
-
-    _this.createDataURL = function(cellSize, margin) {
-
-      cellSize = cellSize || 2;
-      margin = (typeof margin == 'undefined')? cellSize * 4 : margin;
-
-      var size = _this.getModuleCount() * cellSize + margin * 2;
-      var min = margin;
-      var max = size - margin;
-
-      return createDataURL(size, size, function(x, y) {
-        if (min <= x && x < max && min <= y && y < max) {
-          var c = Math.floor( (x - min) / cellSize);
-          var r = Math.floor( (y - min) / cellSize);
-          return _this.isDark(r, c)? 0 : 1;
-        } else {
-          return 1;
-        }
-      } );
-    };
-
-    _this.createImgTag = function(cellSize, margin, alt) {
-
-      cellSize = cellSize || 2;
-      margin = (typeof margin == 'undefined')? cellSize * 4 : margin;
-
-      var size = _this.getModuleCount() * cellSize + margin * 2;
-
-      var img = '';
-      img += '<img';
-      img += '\u0020src="';
-      img += _this.createDataURL(cellSize, margin);
-      img += '"';
-      img += '\u0020width="';
-      img += size;
-      img += '"';
-      img += '\u0020height="';
-      img += size;
-      img += '"';
-      if (alt) {
-        img += '\u0020alt="';
-        img += escapeXml(alt);
-        img += '"';
-      }
-      img += '/>';
-
-      return img;
-    };
-
-    var escapeXml = function(s) {
-      var escaped = '';
-      for (var i = 0; i < s.length; i += 1) {
-        var c = s.charAt(i);
-        switch(c) {
-        case '<': escaped += '&lt;'; break;
-        case '>': escaped += '&gt;'; break;
-        case '&': escaped += '&amp;'; break;
-        case '"': escaped += '&quot;'; break;
-        default : escaped += c; break;
-        }
-      }
-      return escaped;
-    };
-
-    var _createHalfASCII = function(margin) {
-      var cellSize = 1;
-      margin = (typeof margin == 'undefined')? cellSize * 2 : margin;
-
-      var size = _this.getModuleCount() * cellSize + margin * 2;
-      var min = margin;
-      var max = size - margin;
-
-      var y, x, r1, r2, p;
-
-      var blocks = {
-        '██': '█',
-        '█ ': '▀',
-        ' █': '▄',
-        '  ': ' '
-      };
-
-      var blocksLastLineNoMargin = {
-        '██': '▀',
-        '█ ': '▀',
-        ' █': ' ',
-        '  ': ' '
-      };
-
-      var ascii = '';
-      for (y = 0; y < size; y += 2) {
-        r1 = Math.floor((y - min) / cellSize);
-        r2 = Math.floor((y + 1 - min) / cellSize);
-        for (x = 0; x < size; x += 1) {
-          p = '█';
-
-          if (min <= x && x < max && min <= y && y < max && _this.isDark(r1, Math.floor((x - min) / cellSize))) {
-            p = ' ';
-          }
-
-          if (min <= x && x < max && min <= y+1 && y+1 < max && _this.isDark(r2, Math.floor((x - min) / cellSize))) {
-            p += ' ';
-          }
-          else {
-            p += '█';
-          }
-
-          // Output 2 characters per pixel, to create full square. 1 character per pixels gives only half width of square.
-          ascii += (margin < 1 && y+1 >= max) ? blocksLastLineNoMargin[p] : blocks[p];
-        }
-
-        ascii += '\n';
-      }
-
-      if (size % 2 && margin > 0) {
-        return ascii.substring(0, ascii.length - size - 1) + Array(size+1).join('▀');
-      }
-
-      return ascii.substring(0, ascii.length-1);
-    };
-
-    _this.createASCII = function(cellSize, margin) {
-      cellSize = cellSize || 1;
-
-      if (cellSize < 2) {
-        return _createHalfASCII(margin);
-      }
-
-      cellSize -= 1;
-      margin = (typeof margin == 'undefined')? cellSize * 2 : margin;
-
-      var size = _this.getModuleCount() * cellSize + margin * 2;
-      var min = margin;
-      var max = size - margin;
-
-      var y, x, r, p;
-
-      var white = Array(cellSize+1).join('██');
-      var black = Array(cellSize+1).join('  ');
-
-      var ascii = '';
-      var line = '';
-      for (y = 0; y < size; y += 1) {
-        r = Math.floor( (y - min) / cellSize);
-        line = '';
-        for (x = 0; x < size; x += 1) {
-          p = 1;
-
-          if (min <= x && x < max && min <= y && y < max && _this.isDark(r, Math.floor((x - min) / cellSize))) {
-            p = 0;
-          }
-
-          // Output 2 characters per pixel, to create full square. 1 character per pixels gives only half width of square.
-          line += p ? white : black;
-        }
-
-        for (r = 0; r < cellSize; r += 1) {
-          ascii += line + '\n';
-        }
-      }
-
-      return ascii.substring(0, ascii.length-1);
-    };
-
-    _this.renderTo2dContext = function(context, cellSize) {
-      cellSize = cellSize || 2;
-      var length = _this.getModuleCount();
-      for (var row = 0; row < length; row++) {
-        for (var col = 0; col < length; col++) {
-          context.fillStyle = _this.isDark(row, col) ? 'black' : 'white';
-          context.fillRect(col * cellSize, row * cellSize, cellSize, cellSize);
-        }
-      }
-    }
-
-    return _this;
-  };
-
-  //---------------------------------------------------------------------
-  // qrcode.stringToBytes
-  //---------------------------------------------------------------------
-
-  qrcode.stringToBytesFuncs = {
-    'default' : function(s) {
-      var bytes = [];
-      for (var i = 0; i < s.length; i += 1) {
-        var c = s.charCodeAt(i);
-        bytes.push(c & 0xff);
-      }
-      return bytes;
-    }
-  };
-
-  qrcode.stringToBytes = qrcode.stringToBytesFuncs['default'];
-
-  //---------------------------------------------------------------------
-  // qrcode.createStringToBytes
-  //---------------------------------------------------------------------
-
-  /**
-   * @param unicodeData base64 string of byte array.
-   * [16bit Unicode],[16bit Bytes], ...
-   * @param numChars
-   */
-  qrcode.createStringToBytes = function(unicodeData, numChars) {
-
-    // create conversion map.
-
-    var unicodeMap = function() {
-
-      var bin = base64DecodeInputStream(unicodeData);
-      var read = function() {
-        var b = bin.read();
-        if (b == -1) throw 'eof';
-        return b;
-      };
-
-      var count = 0;
-      var unicodeMap = {};
-      while (true) {
-        var b0 = bin.read();
-        if (b0 == -1) break;
-        var b1 = read();
-        var b2 = read();
-        var b3 = read();
-        var k = String.fromCharCode( (b0 << 8) | b1);
-        var v = (b2 << 8) | b3;
-        unicodeMap[k] = v;
-        count += 1;
-      }
-      if (count != numChars) {
-        throw count + ' != ' + numChars;
-      }
-
-      return unicodeMap;
-    }();
-
-    var unknownChar = '?'.charCodeAt(0);
-
-    return function(s) {
-      var bytes = [];
-      for (var i = 0; i < s.length; i += 1) {
-        var c = s.charCodeAt(i);
-        if (c < 128) {
-          bytes.push(c);
-        } else {
-          var b = unicodeMap[s.charAt(i)];
-          if (typeof b == 'number') {
-            if ( (b & 0xff) == b) {
-              // 1byte
-              bytes.push(b);
-            } else {
-              // 2bytes
-              bytes.push(b >>> 8);
-              bytes.push(b & 0xff);
-            }
-          } else {
-            bytes.push(unknownChar);
-          }
-        }
-      }
-      return bytes;
-    };
-  };
-
-  //---------------------------------------------------------------------
-  // QRMode
-  //---------------------------------------------------------------------
-
-  var QRMode = {
-    MODE_NUMBER :    1 << 0,
-    MODE_ALPHA_NUM : 1 << 1,
-    MODE_8BIT_BYTE : 1 << 2,
-    MODE_KANJI :     1 << 3
-  };
-
-  //---------------------------------------------------------------------
-  // QRErrorCorrectionLevel
-  //---------------------------------------------------------------------
-
-  var QRErrorCorrectionLevel = {
-    L : 1,
-    M : 0,
-    Q : 3,
-    H : 2
-  };
-
-  //---------------------------------------------------------------------
-  // QRMaskPattern
-  //---------------------------------------------------------------------
-
-  var QRMaskPattern = {
-    PATTERN000 : 0,
-    PATTERN001 : 1,
-    PATTERN010 : 2,
-    PATTERN011 : 3,
-    PATTERN100 : 4,
-    PATTERN101 : 5,
-    PATTERN110 : 6,
-    PATTERN111 : 7
-  };
-
-  //---------------------------------------------------------------------
-  // QRUtil
-  //---------------------------------------------------------------------
-
-  var QRUtil = function() {
-
-    var PATTERN_POSITION_TABLE = [
-      [],
-      [6, 18],
-      [6, 22],
-      [6, 26],
-      [6, 30],
-      [6, 34],
-      [6, 22, 38],
-      [6, 24, 42],
-      [6, 26, 46],
-      [6, 28, 50],
-      [6, 30, 54],
-      [6, 32, 58],
-      [6, 34, 62],
-      [6, 26, 46, 66],
-      [6, 26, 48, 70],
-      [6, 26, 50, 74],
-      [6, 30, 54, 78],
-      [6, 30, 56, 82],
-      [6, 30, 58, 86],
-      [6, 34, 62, 90],
-      [6, 28, 50, 72, 94],
-      [6, 26, 50, 74, 98],
-      [6, 30, 54, 78, 102],
-      [6, 28, 54, 80, 106],
-      [6, 32, 58, 84, 110],
-      [6, 30, 58, 86, 114],
-      [6, 34, 62, 90, 118],
-      [6, 26, 50, 74, 98, 122],
-      [6, 30, 54, 78, 102, 126],
-      [6, 26, 52, 78, 104, 130],
-      [6, 30, 56, 82, 108, 134],
-      [6, 34, 60, 86, 112, 138],
-      [6, 30, 58, 86, 114, 142],
-      [6, 34, 62, 90, 118, 146],
-      [6, 30, 54, 78, 102, 126, 150],
-      [6, 24, 50, 76, 102, 128, 154],
-      [6, 28, 54, 80, 106, 132, 158],
-      [6, 32, 58, 84, 110, 136, 162],
-      [6, 26, 54, 82, 110, 138, 166],
-      [6, 30, 58, 86, 114, 142, 170]
-    ];
-    var G15 = (1 << 10) | (1 << 8) | (1 << 5) | (1 << 4) | (1 << 2) | (1 << 1) | (1 << 0);
-    var G18 = (1 << 12) | (1 << 11) | (1 << 10) | (1 << 9) | (1 << 8) | (1 << 5) | (1 << 2) | (1 << 0);
-    var G15_MASK = (1 << 14) | (1 << 12) | (1 << 10) | (1 << 4) | (1 << 1);
-
-    var _this = {};
-
-    var getBCHDigit = function(data) {
-      var digit = 0;
-      while (data != 0) {
-        digit += 1;
-        data >>>= 1;
-      }
-      return digit;
-    };
-
-    _this.getBCHTypeInfo = function(data) {
-      var d = data << 10;
-      while (getBCHDigit(d) - getBCHDigit(G15) >= 0) {
-        d ^= (G15 << (getBCHDigit(d) - getBCHDigit(G15) ) );
-      }
-      return ( (data << 10) | d) ^ G15_MASK;
-    };
-
-    _this.getBCHTypeNumber = function(data) {
-      var d = data << 12;
-      while (getBCHDigit(d) - getBCHDigit(G18) >= 0) {
-        d ^= (G18 << (getBCHDigit(d) - getBCHDigit(G18) ) );
-      }
-      return (data << 12) | d;
-    };
-
-    _this.getPatternPosition = function(typeNumber) {
-      return PATTERN_POSITION_TABLE[typeNumber - 1];
-    };
-
-    _this.getMaskFunction = function(maskPattern) {
-
-      switch (maskPattern) {
-
-      case QRMaskPattern.PATTERN000 :
-        return function(i, j) { return (i + j) % 2 == 0; };
-      case QRMaskPattern.PATTERN001 :
-        return function(i, j) { return i % 2 == 0; };
-      case QRMaskPattern.PATTERN010 :
-        return function(i, j) { return j % 3 == 0; };
-      case QRMaskPattern.PATTERN011 :
-        return function(i, j) { return (i + j) % 3 == 0; };
-      case QRMaskPattern.PATTERN100 :
-        return function(i, j) { return (Math.floor(i / 2) + Math.floor(j / 3) ) % 2 == 0; };
-      case QRMaskPattern.PATTERN101 :
-        return function(i, j) { return (i * j) % 2 + (i * j) % 3 == 0; };
-      case QRMaskPattern.PATTERN110 :
-        return function(i, j) { return ( (i * j) % 2 + (i * j) % 3) % 2 == 0; };
-      case QRMaskPattern.PATTERN111 :
-        return function(i, j) { return ( (i * j) % 3 + (i + j) % 2) % 2 == 0; };
-
-      default :
-        throw 'bad maskPattern:' + maskPattern;
-      }
-    };
-
-    _this.getErrorCorrectPolynomial = function(errorCorrectLength) {
-      var a = qrPolynomial([1], 0);
-      for (var i = 0; i < errorCorrectLength; i += 1) {
-        a = a.multiply(qrPolynomial([1, QRMath.gexp(i)], 0) );
-      }
-      return a;
-    };
-
-    _this.getLengthInBits = function(mode, type) {
-
-      if (1 <= type && type < 10) {
-
-        // 1 - 9
-
-        switch(mode) {
-        case QRMode.MODE_NUMBER    : return 10;
-        case QRMode.MODE_ALPHA_NUM : return 9;
-        case QRMode.MODE_8BIT_BYTE : return 8;
-        case QRMode.MODE_KANJI     : return 8;
-        default :
-          throw 'mode:' + mode;
-        }
-
-      } else if (type < 27) {
-
-        // 10 - 26
-
-        switch(mode) {
-        case QRMode.MODE_NUMBER    : return 12;
-        case QRMode.MODE_ALPHA_NUM : return 11;
-        case QRMode.MODE_8BIT_BYTE : return 16;
-        case QRMode.MODE_KANJI     : return 10;
-        default :
-          throw 'mode:' + mode;
-        }
-
-      } else if (type < 41) {
-
-        // 27 - 40
-
-        switch(mode) {
-        case QRMode.MODE_NUMBER    : return 14;
-        case QRMode.MODE_ALPHA_NUM : return 13;
-        case QRMode.MODE_8BIT_BYTE : return 16;
-        case QRMode.MODE_KANJI     : return 12;
-        default :
-          throw 'mode:' + mode;
-        }
-
-      } else {
-        throw 'type:' + type;
-      }
-    };
-
-    _this.getLostPoint = function(qrcode) {
-
-      var moduleCount = qrcode.getModuleCount();
-
-      var lostPoint = 0;
-
-      // LEVEL1
-
-      for (var row = 0; row < moduleCount; row += 1) {
-        for (var col = 0; col < moduleCount; col += 1) {
-
-          var sameCount = 0;
-          var dark = qrcode.isDark(row, col);
-
-          for (var r = -1; r <= 1; r += 1) {
-
-            if (row + r < 0 || moduleCount <= row + r) {
-              continue;
-            }
-
-            for (var c = -1; c <= 1; c += 1) {
-
-              if (col + c < 0 || moduleCount <= col + c) {
-                continue;
-              }
-
-              if (r == 0 && c == 0) {
-                continue;
-              }
-
-              if (dark == qrcode.isDark(row + r, col + c) ) {
-                sameCount += 1;
-              }
-            }
-          }
-
-          if (sameCount > 5) {
-            lostPoint += (3 + sameCount - 5);
-          }
-        }
-      };
-
-      // LEVEL2
-
-      for (var row = 0; row < moduleCount - 1; row += 1) {
-        for (var col = 0; col < moduleCount - 1; col += 1) {
-          var count = 0;
-          if (qrcode.isDark(row, col) ) count += 1;
-          if (qrcode.isDark(row + 1, col) ) count += 1;
-          if (qrcode.isDark(row, col + 1) ) count += 1;
-          if (qrcode.isDark(row + 1, col + 1) ) count += 1;
-          if (count == 0 || count == 4) {
-            lostPoint += 3;
-          }
-        }
-      }
-
-      // LEVEL3
-
-      for (var row = 0; row < moduleCount; row += 1) {
-        for (var col = 0; col < moduleCount - 6; col += 1) {
-          if (qrcode.isDark(row, col)
-              && !qrcode.isDark(row, col + 1)
-              &&  qrcode.isDark(row, col + 2)
-              &&  qrcode.isDark(row, col + 3)
-              &&  qrcode.isDark(row, col + 4)
-              && !qrcode.isDark(row, col + 5)
-              &&  qrcode.isDark(row, col + 6) ) {
-            lostPoint += 40;
-          }
-        }
-      }
-
-      for (var col = 0; col < moduleCount; col += 1) {
-        for (var row = 0; row < moduleCount - 6; row += 1) {
-          if (qrcode.isDark(row, col)
-              && !qrcode.isDark(row + 1, col)
-              &&  qrcode.isDark(row + 2, col)
-              &&  qrcode.isDark(row + 3, col)
-              &&  qrcode.isDark(row + 4, col)
-              && !qrcode.isDark(row + 5, col)
-              &&  qrcode.isDark(row + 6, col) ) {
-            lostPoint += 40;
-          }
-        }
-      }
-
-      // LEVEL4
-
-      var darkCount = 0;
-
-      for (var col = 0; col < moduleCount; col += 1) {
-        for (var row = 0; row < moduleCount; row += 1) {
-          if (qrcode.isDark(row, col) ) {
-            darkCount += 1;
-          }
-        }
-      }
-
-      var ratio = Math.abs(100 * darkCount / moduleCount / moduleCount - 50) / 5;
-      lostPoint += ratio * 10;
-
-      return lostPoint;
-    };
-
-    return _this;
-  }();
-
-  //---------------------------------------------------------------------
-  // QRMath
-  //---------------------------------------------------------------------
-
-  var QRMath = function() {
-
-    var EXP_TABLE = new Array(256);
-    var LOG_TABLE = new Array(256);
-
-    // initialize tables
-    for (var i = 0; i < 8; i += 1) {
-      EXP_TABLE[i] = 1 << i;
-    }
-    for (var i = 8; i < 256; i += 1) {
-      EXP_TABLE[i] = EXP_TABLE[i - 4]
-        ^ EXP_TABLE[i - 5]
-        ^ EXP_TABLE[i - 6]
-        ^ EXP_TABLE[i - 8];
-    }
-    for (var i = 0; i < 255; i += 1) {
-      LOG_TABLE[EXP_TABLE[i] ] = i;
-    }
-
-    var _this = {};
-
-    _this.glog = function(n) {
-
-      if (n < 1) {
-        throw 'glog(' + n + ')';
-      }
-
-      return LOG_TABLE[n];
-    };
-
-    _this.gexp = function(n) {
-
-      while (n < 0) {
-        n += 255;
-      }
-
-      while (n >= 256) {
-        n -= 255;
-      }
-
-      return EXP_TABLE[n];
-    };
-
-    return _this;
-  }();
-
-  //---------------------------------------------------------------------
-  // qrPolynomial
-  //---------------------------------------------------------------------
-
-  function qrPolynomial(num, shift) {
-
-    if (typeof num.length == 'undefined') {
-      throw num.length + '/' + shift;
-    }
-
-    var _num = function() {
-      var offset = 0;
-      while (offset < num.length && num[offset] == 0) {
-        offset += 1;
-      }
-      var _num = new Array(num.length - offset + shift);
-      for (var i = 0; i < num.length - offset; i += 1) {
-        _num[i] = num[i + offset];
-      }
-      return _num;
-    }();
-
-    var _this = {};
-
-    _this.getAt = function(index) {
-      return _num[index];
-    };
-
-    _this.getLength = function() {
-      return _num.length;
-    };
-
-    _this.multiply = function(e) {
-
-      var num = new Array(_this.getLength() + e.getLength() - 1);
-
-      for (var i = 0; i < _this.getLength(); i += 1) {
-        for (var j = 0; j < e.getLength(); j += 1) {
-          num[i + j] ^= QRMath.gexp(QRMath.glog(_this.getAt(i) ) + QRMath.glog(e.getAt(j) ) );
-        }
-      }
-
-      return qrPolynomial(num, 0);
-    };
-
-    _this.mod = function(e) {
-
-      if (_this.getLength() - e.getLength() < 0) {
-        return _this;
-      }
-
-      var ratio = QRMath.glog(_this.getAt(0) ) - QRMath.glog(e.getAt(0) );
-
-      var num = new Array(_this.getLength() );
-      for (var i = 0; i < _this.getLength(); i += 1) {
-        num[i] = _this.getAt(i);
-      }
-
-      for (var i = 0; i < e.getLength(); i += 1) {
-        num[i] ^= QRMath.gexp(QRMath.glog(e.getAt(i) ) + ratio);
-      }
-
-      // recursive call
-      return qrPolynomial(num, 0).mod(e);
-    };
-
-    return _this;
-  };
-
-  //---------------------------------------------------------------------
-  // QRRSBlock
-  //---------------------------------------------------------------------
-
-  var QRRSBlock = function() {
-
-    var RS_BLOCK_TABLE = [
-
-      // L
-      // M
-      // Q
-      // H
-
-      // 1
-      [1, 26, 19],
-      [1, 26, 16],
-      [1, 26, 13],
-      [1, 26, 9],
-
-      // 2
-      [1, 44, 34],
-      [1, 44, 28],
-      [1, 44, 22],
-      [1, 44, 16],
-
-      // 3
-      [1, 70, 55],
-      [1, 70, 44],
-      [2, 35, 17],
-      [2, 35, 13],
-
-      // 4
-      [1, 100, 80],
-      [2, 50, 32],
-      [2, 50, 24],
-      [4, 25, 9],
-
-      // 5
-      [1, 134, 108],
-      [2, 67, 43],
-      [2, 33, 15, 2, 34, 16],
-      [2, 33, 11, 2, 34, 12],
-
-      // 6
-      [2, 86, 68],
-      [4, 43, 27],
-      [4, 43, 19],
-      [4, 43, 15],
-
-      // 7
-      [2, 98, 78],
-      [4, 49, 31],
-      [2, 32, 14, 4, 33, 15],
-      [4, 39, 13, 1, 40, 14],
-
-      // 8
-      [2, 121, 97],
-      [2, 60, 38, 2, 61, 39],
-      [4, 40, 18, 2, 41, 19],
-      [4, 40, 14, 2, 41, 15],
-
-      // 9
-      [2, 146, 116],
-      [3, 58, 36, 2, 59, 37],
-      [4, 36, 16, 4, 37, 17],
-      [4, 36, 12, 4, 37, 13],
-
-      // 10
-      [2, 86, 68, 2, 87, 69],
-      [4, 69, 43, 1, 70, 44],
-      [6, 43, 19, 2, 44, 20],
-      [6, 43, 15, 2, 44, 16],
-
-      // 11
-      [4, 101, 81],
-      [1, 80, 50, 4, 81, 51],
-      [4, 50, 22, 4, 51, 23],
-      [3, 36, 12, 8, 37, 13],
-
-      // 12
-      [2, 116, 92, 2, 117, 93],
-      [6, 58, 36, 2, 59, 37],
-      [4, 46, 20, 6, 47, 21],
-      [7, 42, 14, 4, 43, 15],
-
-      // 13
-      [4, 133, 107],
-      [8, 59, 37, 1, 60, 38],
-      [8, 44, 20, 4, 45, 21],
-      [12, 33, 11, 4, 34, 12],
-
-      // 14
-      [3, 145, 115, 1, 146, 116],
-      [4, 64, 40, 5, 65, 41],
-      [11, 36, 16, 5, 37, 17],
-      [11, 36, 12, 5, 37, 13],
-
-      // 15
-      [5, 109, 87, 1, 110, 88],
-      [5, 65, 41, 5, 66, 42],
-      [5, 54, 24, 7, 55, 25],
-      [11, 36, 12, 7, 37, 13],
-
-      // 16
-      [5, 122, 98, 1, 123, 99],
-      [7, 73, 45, 3, 74, 46],
-      [15, 43, 19, 2, 44, 20],
-      [3, 45, 15, 13, 46, 16],
-
-      // 17
-      [1, 135, 107, 5, 136, 108],
-      [10, 74, 46, 1, 75, 47],
-      [1, 50, 22, 15, 51, 23],
-      [2, 42, 14, 17, 43, 15],
-
-      // 18
-      [5, 150, 120, 1, 151, 121],
-      [9, 69, 43, 4, 70, 44],
-      [17, 50, 22, 1, 51, 23],
-      [2, 42, 14, 19, 43, 15],
-
-      // 19
-      [3, 141, 113, 4, 142, 114],
-      [3, 70, 44, 11, 71, 45],
-      [17, 47, 21, 4, 48, 22],
-      [9, 39, 13, 16, 40, 14],
-
-      // 20
-      [3, 135, 107, 5, 136, 108],
-      [3, 67, 41, 13, 68, 42],
-      [15, 54, 24, 5, 55, 25],
-      [15, 43, 15, 10, 44, 16],
-
-      // 21
-      [4, 144, 116, 4, 145, 117],
-      [17, 68, 42],
-      [17, 50, 22, 6, 51, 23],
-      [19, 46, 16, 6, 47, 17],
-
-      // 22
-      [2, 139, 111, 7, 140, 112],
-      [17, 74, 46],
-      [7, 54, 24, 16, 55, 25],
-      [34, 37, 13],
-
-      // 23
-      [4, 151, 121, 5, 152, 122],
-      [4, 75, 47, 14, 76, 48],
-      [11, 54, 24, 14, 55, 25],
-      [16, 45, 15, 14, 46, 16],
-
-      // 24
-      [6, 147, 117, 4, 148, 118],
-      [6, 73, 45, 14, 74, 46],
-      [11, 54, 24, 16, 55, 25],
-      [30, 46, 16, 2, 47, 17],
-
-      // 25
-      [8, 132, 106, 4, 133, 107],
-      [8, 75, 47, 13, 76, 48],
-      [7, 54, 24, 22, 55, 25],
-      [22, 45, 15, 13, 46, 16],
-
-      // 26
-      [10, 142, 114, 2, 143, 115],
-      [19, 74, 46, 4, 75, 47],
-      [28, 50, 22, 6, 51, 23],
-      [33, 46, 16, 4, 47, 17],
-
-      // 27
-      [8, 152, 122, 4, 153, 123],
-      [22, 73, 45, 3, 74, 46],
-      [8, 53, 23, 26, 54, 24],
-      [12, 45, 15, 28, 46, 16],
-
-      // 28
-      [3, 147, 117, 10, 148, 118],
-      [3, 73, 45, 23, 74, 46],
-      [4, 54, 24, 31, 55, 25],
-      [11, 45, 15, 31, 46, 16],
-
-      // 29
-      [7, 146, 116, 7, 147, 117],
-      [21, 73, 45, 7, 74, 46],
-      [1, 53, 23, 37, 54, 24],
-      [19, 45, 15, 26, 46, 16],
-
-      // 30
-      [5, 145, 115, 10, 146, 116],
-      [19, 75, 47, 10, 76, 48],
-      [15, 54, 24, 25, 55, 25],
-      [23, 45, 15, 25, 46, 16],
-
-      // 31
-      [13, 145, 115, 3, 146, 116],
-      [2, 74, 46, 29, 75, 47],
-      [42, 54, 24, 1, 55, 25],
-      [23, 45, 15, 28, 46, 16],
-
-      // 32
-      [17, 145, 115],
-      [10, 74, 46, 23, 75, 47],
-      [10, 54, 24, 35, 55, 25],
-      [19, 45, 15, 35, 46, 16],
-
-      // 33
-      [17, 145, 115, 1, 146, 116],
-      [14, 74, 46, 21, 75, 47],
-      [29, 54, 24, 19, 55, 25],
-      [11, 45, 15, 46, 46, 16],
-
-      // 34
-      [13, 145, 115, 6, 146, 116],
-      [14, 74, 46, 23, 75, 47],
-      [44, 54, 24, 7, 55, 25],
-      [59, 46, 16, 1, 47, 17],
-
-      // 35
-      [12, 151, 121, 7, 152, 122],
-      [12, 75, 47, 26, 76, 48],
-      [39, 54, 24, 14, 55, 25],
-      [22, 45, 15, 41, 46, 16],
-
-      // 36
-      [6, 151, 121, 14, 152, 122],
-      [6, 75, 47, 34, 76, 48],
-      [46, 54, 24, 10, 55, 25],
-      [2, 45, 15, 64, 46, 16],
-
-      // 37
-      [17, 152, 122, 4, 153, 123],
-      [29, 74, 46, 14, 75, 47],
-      [49, 54, 24, 10, 55, 25],
-      [24, 45, 15, 46, 46, 16],
-
-      // 38
-      [4, 152, 122, 18, 153, 123],
-      [13, 74, 46, 32, 75, 47],
-      [48, 54, 24, 14, 55, 25],
-      [42, 45, 15, 32, 46, 16],
-
-      // 39
-      [20, 147, 117, 4, 148, 118],
-      [40, 75, 47, 7, 76, 48],
-      [43, 54, 24, 22, 55, 25],
-      [10, 45, 15, 67, 46, 16],
-
-      // 40
-      [19, 148, 118, 6, 149, 119],
-      [18, 75, 47, 31, 76, 48],
-      [34, 54, 24, 34, 55, 25],
-      [20, 45, 15, 61, 46, 16]
-    ];
-
-    var qrRSBlock = function(totalCount, dataCount) {
-      var _this = {};
-      _this.totalCount = totalCount;
-      _this.dataCount = dataCount;
-      return _this;
-    };
-
-    var _this = {};
-
-    var getRsBlockTable = function(typeNumber, errorCorrectionLevel) {
-
-      switch(errorCorrectionLevel) {
-      case QRErrorCorrectionLevel.L :
-        return RS_BLOCK_TABLE[(typeNumber - 1) * 4 + 0];
-      case QRErrorCorrectionLevel.M :
-        return RS_BLOCK_TABLE[(typeNumber - 1) * 4 + 1];
-      case QRErrorCorrectionLevel.Q :
-        return RS_BLOCK_TABLE[(typeNumber - 1) * 4 + 2];
-      case QRErrorCorrectionLevel.H :
-        return RS_BLOCK_TABLE[(typeNumber - 1) * 4 + 3];
-      default :
-        return undefined;
-      }
-    };
-
-    _this.getRSBlocks = function(typeNumber, errorCorrectionLevel) {
-
-      var rsBlock = getRsBlockTable(typeNumber, errorCorrectionLevel);
-
-      if (typeof rsBlock == 'undefined') {
-        throw 'bad rs block @ typeNumber:' + typeNumber +
-            '/errorCorrectionLevel:' + errorCorrectionLevel;
-      }
-
-      var length = rsBlock.length / 3;
-
-      var list = [];
-
-      for (var i = 0; i < length; i += 1) {
-
-        var count = rsBlock[i * 3 + 0];
-        var totalCount = rsBlock[i * 3 + 1];
-        var dataCount = rsBlock[i * 3 + 2];
-
-        for (var j = 0; j < count; j += 1) {
-          list.push(qrRSBlock(totalCount, dataCount) );
-        }
-      }
-
-      return list;
-    };
-
-    return _this;
-  }();
-
-  //---------------------------------------------------------------------
-  // qrBitBuffer
-  //---------------------------------------------------------------------
-
-  var qrBitBuffer = function() {
-
-    var _buffer = [];
-    var _length = 0;
-
-    var _this = {};
-
-    _this.getBuffer = function() {
-      return _buffer;
-    };
-
-    _this.getAt = function(index) {
-      var bufIndex = Math.floor(index / 8);
-      return ( (_buffer[bufIndex] >>> (7 - index % 8) ) & 1) == 1;
-    };
-
-    _this.put = function(num, length) {
-      for (var i = 0; i < length; i += 1) {
-        _this.putBit( ( (num >>> (length - i - 1) ) & 1) == 1);
-      }
-    };
-
-    _this.getLengthInBits = function() {
-      return _length;
-    };
-
-    _this.putBit = function(bit) {
-
-      var bufIndex = Math.floor(_length / 8);
-      if (_buffer.length <= bufIndex) {
-        _buffer.push(0);
-      }
-
-      if (bit) {
-        _buffer[bufIndex] |= (0x80 >>> (_length % 8) );
-      }
-
-      _length += 1;
-    };
-
-    return _this;
-  };
-
-  //---------------------------------------------------------------------
-  // qrNumber
-  //---------------------------------------------------------------------
-
-  var qrNumber = function(data) {
-
-    var _mode = QRMode.MODE_NUMBER;
-    var _data = data;
-
-    var _this = {};
-
-    _this.getMode = function() {
-      return _mode;
-    };
-
-    _this.getLength = function(buffer) {
-      return _data.length;
-    };
-
-    _this.write = function(buffer) {
-
-      var data = _data;
-
-      var i = 0;
-
-      while (i + 2 < data.length) {
-        buffer.put(strToNum(data.substring(i, i + 3) ), 10);
-        i += 3;
-      }
-
-      if (i < data.length) {
-        if (data.length - i == 1) {
-          buffer.put(strToNum(data.substring(i, i + 1) ), 4);
-        } else if (data.length - i == 2) {
-          buffer.put(strToNum(data.substring(i, i + 2) ), 7);
-        }
-      }
-    };
-
-    var strToNum = function(s) {
-      var num = 0;
-      for (var i = 0; i < s.length; i += 1) {
-        num = num * 10 + chatToNum(s.charAt(i) );
-      }
-      return num;
-    };
-
-    var chatToNum = function(c) {
-      if ('0' <= c && c <= '9') {
-        return c.charCodeAt(0) - '0'.charCodeAt(0);
-      }
-      throw 'illegal char :' + c;
-    };
-
-    return _this;
-  };
-
-  //---------------------------------------------------------------------
-  // qrAlphaNum
-  //---------------------------------------------------------------------
-
-  var qrAlphaNum = function(data) {
-
-    var _mode = QRMode.MODE_ALPHA_NUM;
-    var _data = data;
-
-    var _this = {};
-
-    _this.getMode = function() {
-      return _mode;
-    };
-
-    _this.getLength = function(buffer) {
-      return _data.length;
-    };
-
-    _this.write = function(buffer) {
-
-      var s = _data;
-
-      var i = 0;
-
-      while (i + 1 < s.length) {
-        buffer.put(
-          getCode(s.charAt(i) ) * 45 +
-          getCode(s.charAt(i + 1) ), 11);
-        i += 2;
-      }
-
-      if (i < s.length) {
-        buffer.put(getCode(s.charAt(i) ), 6);
-      }
-    };
-
-    var getCode = function(c) {
-
-      if ('0' <= c && c <= '9') {
-        return c.charCodeAt(0) - '0'.charCodeAt(0);
-      } else if ('A' <= c && c <= 'Z') {
-        return c.charCodeAt(0) - 'A'.charCodeAt(0) + 10;
-      } else {
-        switch (c) {
-        case ' ' : return 36;
-        case '$' : return 37;
-        case '%' : return 38;
-        case '*' : return 39;
-        case '+' : return 40;
-        case '-' : return 41;
-        case '.' : return 42;
-        case '/' : return 43;
-        case ':' : return 44;
-        default :
-          throw 'illegal char :' + c;
-        }
-      }
-    };
-
-    return _this;
-  };
-
-  //---------------------------------------------------------------------
-  // qr8BitByte
-  //---------------------------------------------------------------------
-
-  var qr8BitByte = function(data) {
-
-    var _mode = QRMode.MODE_8BIT_BYTE;
-    var _data = data;
-    var _bytes = qrcode.stringToBytes(data);
-
-    var _this = {};
-
-    _this.getMode = function() {
-      return _mode;
-    };
-
-    _this.getLength = function(buffer) {
-      return _bytes.length;
-    };
-
-    _this.write = function(buffer) {
-      for (var i = 0; i < _bytes.length; i += 1) {
-        buffer.put(_bytes[i], 8);
-      }
-    };
-
-    return _this;
-  };
-
-  //---------------------------------------------------------------------
-  // qrKanji
-  //---------------------------------------------------------------------
-
-  var qrKanji = function(data) {
-
-    var _mode = QRMode.MODE_KANJI;
-    var _data = data;
-
-    var stringToBytes = qrcode.stringToBytesFuncs['SJIS'];
-    if (!stringToBytes) {
-      throw 'sjis not supported.';
-    }
-    !function(c, code) {
-      // self test for sjis support.
-      var test = stringToBytes(c);
-      if (test.length != 2 || ( (test[0] << 8) | test[1]) != code) {
-        throw 'sjis not supported.';
-      }
-    }('\u53cb', 0x9746);
-
-    var _bytes = stringToBytes(data);
-
-    var _this = {};
-
-    _this.getMode = function() {
-      return _mode;
-    };
-
-    _this.getLength = function(buffer) {
-      return ~~(_bytes.length / 2);
-    };
-
-    _this.write = function(buffer) {
-
-      var data = _bytes;
-
-      var i = 0;
-
-      while (i + 1 < data.length) {
-
-        var c = ( (0xff & data[i]) << 8) | (0xff & data[i + 1]);
-
-        if (0x8140 <= c && c <= 0x9FFC) {
-          c -= 0x8140;
-        } else if (0xE040 <= c && c <= 0xEBBF) {
-          c -= 0xC140;
-        } else {
-          throw 'illegal char at ' + (i + 1) + '/' + c;
-        }
-
-        c = ( (c >>> 8) & 0xff) * 0xC0 + (c & 0xff);
-
-        buffer.put(c, 13);
-
-        i += 2;
-      }
-
-      if (i < data.length) {
-        throw 'illegal char at ' + (i + 1);
-      }
-    };
-
-    return _this;
-  };
-
-  //=====================================================================
-  // GIF Support etc.
-  //
-
-  //---------------------------------------------------------------------
-  // byteArrayOutputStream
-  //---------------------------------------------------------------------
-
-  var byteArrayOutputStream = function() {
-
-    var _bytes = [];
-
-    var _this = {};
-
-    _this.writeByte = function(b) {
-      _bytes.push(b & 0xff);
-    };
-
-    _this.writeShort = function(i) {
-      _this.writeByte(i);
-      _this.writeByte(i >>> 8);
-    };
-
-    _this.writeBytes = function(b, off, len) {
-      off = off || 0;
-      len = len || b.length;
-      for (var i = 0; i < len; i += 1) {
-        _this.writeByte(b[i + off]);
-      }
-    };
-
-    _this.writeString = function(s) {
-      for (var i = 0; i < s.length; i += 1) {
-        _this.writeByte(s.charCodeAt(i) );
-      }
-    };
-
-    _this.toByteArray = function() {
-      return _bytes;
-    };
-
-    _this.toString = function() {
-      var s = '';
-      s += '[';
-      for (var i = 0; i < _bytes.length; i += 1) {
-        if (i > 0) {
-          s += ',';
-        }
-        s += _bytes[i];
-      }
-      s += ']';
-      return s;
-    };
-
-    return _this;
-  };
-
-  //---------------------------------------------------------------------
-  // base64EncodeOutputStream
-  //---------------------------------------------------------------------
-
-  var base64EncodeOutputStream = function() {
-
-    var _buffer = 0;
-    var _buflen = 0;
-    var _length = 0;
-    var _base64 = '';
-
-    var _this = {};
-
-    var writeEncoded = function(b) {
-      _base64 += String.fromCharCode(encode(b & 0x3f) );
-    };
-
-    var encode = function(n) {
-      if (n < 0) {
-        // error.
-      } else if (n < 26) {
-        return 0x41 + n;
-      } else if (n < 52) {
-        return 0x61 + (n - 26);
-      } else if (n < 62) {
-        return 0x30 + (n - 52);
-      } else if (n == 62) {
-        return 0x2b;
-      } else if (n == 63) {
-        return 0x2f;
-      }
-      throw 'n:' + n;
-    };
-
-    _this.writeByte = function(n) {
-
-      _buffer = (_buffer << 8) | (n & 0xff);
-      _buflen += 8;
-      _length += 1;
-
-      while (_buflen >= 6) {
-        writeEncoded(_buffer >>> (_buflen - 6) );
-        _buflen -= 6;
-      }
-    };
-
-    _this.flush = function() {
-
-      if (_buflen > 0) {
-        writeEncoded(_buffer << (6 - _buflen) );
-        _buffer = 0;
-        _buflen = 0;
-      }
-
-      if (_length % 3 != 0) {
-        // padding
-        var padlen = 3 - _length % 3;
-        for (var i = 0; i < padlen; i += 1) {
-          _base64 += '=';
-        }
-      }
-    };
-
-    _this.toString = function() {
-      return _base64;
-    };
-
-    return _this;
-  };
-
-  //---------------------------------------------------------------------
-  // base64DecodeInputStream
-  //---------------------------------------------------------------------
-
-  var base64DecodeInputStream = function(str) {
-
-    var _str = str;
-    var _pos = 0;
-    var _buffer = 0;
-    var _buflen = 0;
-
-    var _this = {};
-
-    _this.read = function() {
-
-      while (_buflen < 8) {
-
-        if (_pos >= _str.length) {
-          if (_buflen == 0) {
-            return -1;
-          }
-          throw 'unexpected end of file./' + _buflen;
-        }
-
-        var c = _str.charAt(_pos);
-        _pos += 1;
-
-        if (c == '=') {
-          _buflen = 0;
-          return -1;
-        } else if (c.match(/^\s$/) ) {
-          // ignore if whitespace.
-          continue;
-        }
-
-        _buffer = (_buffer << 6) | decode(c.charCodeAt(0) );
-        _buflen += 6;
-      }
-
-      var n = (_buffer >>> (_buflen - 8) ) & 0xff;
-      _buflen -= 8;
-      return n;
-    };
-
-    var decode = function(c) {
-      if (0x41 <= c && c <= 0x5a) {
-        return c - 0x41;
-      } else if (0x61 <= c && c <= 0x7a) {
-        return c - 0x61 + 26;
-      } else if (0x30 <= c && c <= 0x39) {
-        return c - 0x30 + 52;
-      } else if (c == 0x2b) {
-        return 62;
-      } else if (c == 0x2f) {
-        return 63;
-      } else {
-        throw 'c:' + c;
-      }
-    };
-
-    return _this;
-  };
-
-  //---------------------------------------------------------------------
-  // gifImage (B/W)
-  //---------------------------------------------------------------------
-
-  var gifImage = function(width, height) {
-
-    var _width = width;
-    var _height = height;
-    var _data = new Array(width * height);
-
-    var _this = {};
-
-    _this.setPixel = function(x, y, pixel) {
-      _data[y * _width + x] = pixel;
-    };
-
-    _this.write = function(out) {
-
-      //---------------------------------
-      // GIF Signature
-
-      out.writeString('GIF87a');
-
-      //---------------------------------
-      // Screen Descriptor
-
-      out.writeShort(_width);
-      out.writeShort(_height);
-
-      out.writeByte(0x80); // 2bit
-      out.writeByte(0);
-      out.writeByte(0);
-
-      //---------------------------------
-      // Global Color Map
-
-      // black
-      out.writeByte(0x00);
-      out.writeByte(0x00);
-      out.writeByte(0x00);
-
-      // white
-      out.writeByte(0xff);
-      out.writeByte(0xff);
-      out.writeByte(0xff);
-
-      //---------------------------------
-      // Image Descriptor
-
-      out.writeString(',');
-      out.writeShort(0);
-      out.writeShort(0);
-      out.writeShort(_width);
-      out.writeShort(_height);
-      out.writeByte(0);
-
-      //---------------------------------
-      // Local Color Map
-
-      //---------------------------------
-      // Raster Data
-
-      var lzwMinCodeSize = 2;
-      var raster = getLZWRaster(lzwMinCodeSize);
-
-      out.writeByte(lzwMinCodeSize);
-
-      var offset = 0;
-
-      while (raster.length - offset > 255) {
-        out.writeByte(255);
-        out.writeBytes(raster, offset, 255);
-        offset += 255;
-      }
-
-      out.writeByte(raster.length - offset);
-      out.writeBytes(raster, offset, raster.length - offset);
-      out.writeByte(0x00);
-
-      //---------------------------------
-      // GIF Terminator
-      out.writeString(';');
-    };
-
-    var bitOutputStream = function(out) {
-
-      var _out = out;
-      var _bitLength = 0;
-      var _bitBuffer = 0;
-
-      var _this = {};
-
-      _this.write = function(data, length) {
-
-        if ( (data >>> length) != 0) {
-          throw 'length over';
-        }
-
-        while (_bitLength + length >= 8) {
-          _out.writeByte(0xff & ( (data << _bitLength) | _bitBuffer) );
-          length -= (8 - _bitLength);
-          data >>>= (8 - _bitLength);
-          _bitBuffer = 0;
-          _bitLength = 0;
-        }
-
-        _bitBuffer = (data << _bitLength) | _bitBuffer;
-        _bitLength = _bitLength + length;
-      };
-
-      _this.flush = function() {
-        if (_bitLength > 0) {
-          _out.writeByte(_bitBuffer);
-        }
-      };
-
-      return _this;
-    };
-
-    var getLZWRaster = function(lzwMinCodeSize) {
-
-      var clearCode = 1 << lzwMinCodeSize;
-      var endCode = (1 << lzwMinCodeSize) + 1;
-      var bitLength = lzwMinCodeSize + 1;
-
-      // Setup LZWTable
-      var table = lzwTable();
-
-      for (var i = 0; i < clearCode; i += 1) {
-        table.add(String.fromCharCode(i) );
-      }
-      table.add(String.fromCharCode(clearCode) );
-      table.add(String.fromCharCode(endCode) );
-
-      var byteOut = byteArrayOutputStream();
-      var bitOut = bitOutputStream(byteOut);
-
-      // clear code
-      bitOut.write(clearCode, bitLength);
-
-      var dataIndex = 0;
-
-      var s = String.fromCharCode(_data[dataIndex]);
-      dataIndex += 1;
-
-      while (dataIndex < _data.length) {
-
-        var c = String.fromCharCode(_data[dataIndex]);
-        dataIndex += 1;
-
-        if (table.contains(s + c) ) {
-
-          s = s + c;
-
-        } else {
-
-          bitOut.write(table.indexOf(s), bitLength);
-
-          if (table.size() < 0xfff) {
-
-            if (table.size() == (1 << bitLength) ) {
-              bitLength += 1;
-            }
-
-            table.add(s + c);
-          }
-
-          s = c;
-        }
-      }
-
-      bitOut.write(table.indexOf(s), bitLength);
-
-      // end code
-      bitOut.write(endCode, bitLength);
-
-      bitOut.flush();
-
-      return byteOut.toByteArray();
-    };
-
-    var lzwTable = function() {
-
-      var _map = {};
-      var _size = 0;
-
-      var _this = {};
-
-      _this.add = function(key) {
-        if (_this.contains(key) ) {
-          throw 'dup key:' + key;
-        }
-        _map[key] = _size;
-        _size += 1;
-      };
-
-      _this.size = function() {
-        return _size;
-      };
-
-      _this.indexOf = function(key) {
-        return _map[key];
-      };
-
-      _this.contains = function(key) {
-        return typeof _map[key] != 'undefined';
-      };
-
-      return _this;
-    };
-
-    return _this;
-  };
-
-  var createDataURL = function(width, height, getPixel) {
-    var gif = gifImage(width, height);
-    for (var y = 0; y < height; y += 1) {
-      for (var x = 0; x < width; x += 1) {
-        gif.setPixel(x, y, getPixel(x, y) );
-      }
-    }
-
-    var b = byteArrayOutputStream();
-    gif.write(b);
-
-    var base64 = base64EncodeOutputStream();
-    var bytes = b.toByteArray();
-    for (var i = 0; i < bytes.length; i += 1) {
-      base64.writeByte(bytes[i]);
-    }
-    base64.flush();
-
-    return 'data:image/gif;base64,' + base64;
-  };
-
-  //---------------------------------------------------------------------
-  // returns qrcode function.
-
-  return qrcode;
-}();
-
-// multibyte support
-!function() {
-
-  qrcode.stringToBytesFuncs['UTF-8'] = function(s) {
-    // http://stackoverflow.com/questions/18729405/how-to-convert-utf8-string-to-byte-array
-    function toUTF8Array(str) {
-      var utf8 = [];
-      for (var i=0; i < str.length; i++) {
-        var charcode = str.charCodeAt(i);
-        if (charcode < 0x80) utf8.push(charcode);
-        else if (charcode < 0x800) {
-          utf8.push(0xc0 | (charcode >> 6),
-              0x80 | (charcode & 0x3f));
-        }
-        else if (charcode < 0xd800 || charcode >= 0xe000) {
-          utf8.push(0xe0 | (charcode >> 12),
-              0x80 | ((charcode>>6) & 0x3f),
-              0x80 | (charcode & 0x3f));
-        }
-        // surrogate pair
-        else {
-          i++;
-          // UTF-16 encodes 0x10000-0x10FFFF by
-          // subtracting 0x10000 and splitting the
-          // 20 bits of 0x0-0xFFFFF into two halves
-          charcode = 0x10000 + (((charcode & 0x3ff)<<10)
-            | (str.charCodeAt(i) & 0x3ff));
-          utf8.push(0xf0 | (charcode >>18),
-              0x80 | ((charcode>>12) & 0x3f),
-              0x80 | ((charcode>>6) & 0x3f),
-              0x80 | (charcode & 0x3f));
-        }
-      }
-      return utf8;
-    }
-    return toUTF8Array(s);
-  };
-
-}();
-
-(function (factory) {
-  if (typeof define === 'function' && define.amd) {
-      define([], factory);
-  } else if (typeof exports === 'object') {
-      module.exports = factory();
-  }
-}(function () {
-    return qrcode;
-}));
-
-//---------------------------------------------------------------------
-//
-// QR Code Generator for JavaScript UTF8 Support (optional)
-//
-// Copyright (c) 2011 Kazuhiko Arase
-//
-// URL: http://www.d-project.com/
-//
-// Licensed under the MIT license:
-//  http://www.opensource.org/licenses/mit-license.php
-//
-// The word 'QR Code' is registered trademark of
-// DENSO WAVE INCORPORATED
-//  http://www.denso-wave.com/qrcode/faqpatent-e.html
-//
-//---------------------------------------------------------------------
-
-!function(qrcode) {
-
-  //---------------------------------------------------------------------
-  // overwrite qrcode.stringToBytes
-  //---------------------------------------------------------------------
-
-  qrcode.stringToBytes = qrcode.stringToBytesFuncs['UTF-8'];
-
-}(qrcode);
-</script>
+<script src="qrcode.js"></script>
+<script src="lang.js"></script>
 <script>
-/* ============ بياناتك — عدّلي هنا فقط ============ */
+/* ============ Profile data — edit here only ============ */
 const ME = {
   firstEn:"Sara", lastEn:"Almohammadi",
   fullAr:"سارة المحمدي",
   titleEn:"Software Engineer", titleAr:"مهندس برمجيات",
   orgEn:"Al-Rayan National Colleges", orgAr:"كليات الريان الأهلية",
   email:"sf.almohammadi@amc.edu.sa",
-  mobile:"+966531610076",
-  office:"+966148215555",
+  mobile:"+966531610076",  mobileFmt:"+966 53 161 0076",
+  office:"+966148215555",  officeFmt:"+966 14 821 5555",
   ext:"1536",
+  linkedin:"https://www.linkedin.com/in/sara-almohammadi-470b28178",
   street:"Hijrah Street", city:"Madinah", pobox:"41411", country:"Saudi Arabia",
-  site:""   // ضعي رابط الصفحة بعد رفعها، مثال: "https://sara.github.io/card/"
+  site:""   // Public URL of this page, e.g. "https://sara-almohammadi.vercel.app/"
 };
-/* ================================================ */
+/* ====================================================== */
 
 const $ = s => document.querySelector(s);
+const T = (en, ar) => Lang.t(en, ar);
 
-/* --- vCard الكامل (للتحميل) --- */
+/* --- Full vCard (download) --- */
 function vcardFull(){
   return [
     "BEGIN:VCARD","VERSION:3.0",
@@ -2586,12 +377,13 @@ function vcardFull(){
     `TEL;TYPE=WORK,VOICE:${ME.office}`,
     `EMAIL;TYPE=INTERNET,WORK:${ME.email}`,
     `ADR;TYPE=WORK;CHARSET=UTF-8:;;${ME.street};${ME.city};;${ME.pobox};${ME.country}`,
+    `URL:${ME.linkedin}`,
     ME.site ? `URL:${ME.site}` : null,
-    `NOTE;CHARSET=UTF-8:${ME.orgAr} — ${ME.titleAr}. Ext ${ME.ext}. LEAP.`,
+    `NOTE;CHARSET=UTF-8:${ME.orgEn} — ${ME.titleEn}. Extension ${ME.ext}. LEAP.`,
     "END:VCARD"
   ].filter(Boolean).join("\r\n");
 }
-/* --- vCard مختصر (للباركود، أسرع في المسح) --- */
+/* --- Compact vCard (QR — faster to scan) --- */
 function vcardSlim(){
   return [
     "BEGIN:VCARD","VERSION:3.0",
@@ -2602,33 +394,39 @@ function vcardSlim(){
     `TEL;TYPE=CELL:${ME.mobile}`,
     `TEL;TYPE=WORK:${ME.office}`,
     `EMAIL:${ME.email}`,
+    `URL:${ME.linkedin}`,
     "END:VCARD"
   ].join("\r\n");
 }
 
 function toast(msg){
   const t = $("#toast"); t.textContent = msg; t.classList.add("on");
-  clearTimeout(t._t); t._t = setTimeout(()=>t.classList.remove("on"), 2200);
+  clearTimeout(t._t); t._t = setTimeout(()=>t.classList.remove("on"), 2400);
 }
 
-/* --- حفظ جهة الاتصال --- */
+/* --- Save contact --- */
 $("#saveBtn").addEventListener("click", ()=>{
-  const blob = new Blob(["\uFEFF"+vcardFull()], {type:"text/vcard;charset=utf-8"});
+  const blob = new Blob(["﻿"+vcardFull()], {type:"text/vcard;charset=utf-8"});
   const url = URL.createObjectURL(blob);
   const a = document.createElement("a");
   a.href = url; a.download = "Sara-Almohammadi.vcf";
   document.body.appendChild(a); a.click(); a.remove();
   setTimeout(()=>URL.revokeObjectURL(url), 4000);
-  toast("تم تجهيز البطاقة — افتحيها لإضافتها");
+  toast(T("Contact file ready — open it to add the contact.",
+          "تم تجهيز ملف جهة الاتصال — افتحيه لإضافته."));
 });
 
-/* --- نسخ البريد --- */
+/* --- Copy email --- */
 $("#copyBtn").addEventListener("click", async ()=>{
-  try{ await navigator.clipboard.writeText(ME.email); toast("نُسخ البريد الإلكتروني"); }
-  catch{ toast("انسخي البريد يدويًا من الأسفل"); }
+  try{
+    await navigator.clipboard.writeText(ME.email);
+    toast(T("Email address copied.", "تم نسخ البريد الإلكتروني."));
+  }catch{
+    toast(T("Copy the address from the contact section.", "انسخي العنوان من قسم التواصل."));
+  }
 });
 
-/* --- الباركود --- */
+/* --- QR code --- */
 function drawQR(text, canvas, scale){
   const qr = qrcode(0, "M");
   qr.addData(text); qr.make();
@@ -2639,22 +437,35 @@ function drawQR(text, canvas, scale){
   c.fillStyle = "#091F50";
   for(let r=0;r<n;r++) for(let col=0;col<n;col++)
     if(qr.isDark(r,col)) c.fillRect((col+q)*scale, (r+q)*scale, scale, scale);
-  return canvas;
 }
 let qrMode = "card";
+function profileLink(){
+  if(ME.site) return ME.site;
+  if(!location.protocol.startsWith("http")) return "";
+  const u = new URL(location.href);
+  u.hash = ""; u.search = "";
+  u.searchParams.set("s", "qr");
+  return u.href;
+}
 function renderQR(){
-  const link = ME.site || (location.protocol.startsWith("http") ? location.href : "");
+  const link = profileLink();
   if(qrMode === "link" && !link){
-    toast("ارفعي الصفحة على الإنترنت أولًا"); qrMode = "card";
+    toast(T("Publish the page first to generate a profile link.",
+            "انشري الصفحة أولًا لإنشاء رابط الملف الرقمي."));
+    qrMode = "card";
   }
   const isCard = qrMode === "card";
   $("#tabCard").setAttribute("aria-pressed", isCard);
   $("#tabLink").setAttribute("aria-pressed", !isCard);
   drawQR(isCard ? vcardSlim() : link, $("#qr"), 6);
-  $("#qrTitle").textContent = isCard ? "امسح الكود لحفظ بياناتي" : "امسح الكود لفتح بطاقتي";
+  $("#qrTitle").textContent = isCard
+    ? T("Scan to save my contact details", "امسح الرمز لحفظ بيانات التواصل")
+    : T("Scan to explore our digital profile", "امسح الرمز للاطلاع على ملفنا الرقمي");
   $("#qrSub").textContent = isCard
-    ? "وجّه كاميرا الجوال نحو الكود — سيظهر خيار إضافة جهة الاتصال مباشرة. ارفع إضاءة الشاشة لمسح أسرع."
-    : "يفتح هذه الصفحة كاملة مع بيانات الكلية وفرص الشراكة.";
+    ? T("Point your camera at the code to add the contact directly.",
+        "وجّه كاميرا الجهاز نحو الرمز لإضافة جهة الاتصال مباشرة.")
+    : T("Opens our institutional profile and partnership priorities at LEAP.",
+        "يفتح الملف المؤسسي وأولويات الشراكة في مؤتمر ليب.");
 }
 $("#qrBtn").addEventListener("click", ()=>{ renderQR(); $("#overlay").classList.add("on"); });
 $("#closeBtn").addEventListener("click", ()=> $("#overlay").classList.remove("on"));
@@ -2662,19 +473,35 @@ $("#tabCard").addEventListener("click", ()=>{ qrMode="card"; renderQR(); });
 $("#tabLink").addEventListener("click", ()=>{ qrMode="link"; renderQR(); });
 document.addEventListener("keydown", e=>{ if(e.key==="Escape") $("#overlay").classList.remove("on"); });
 
-/* --- تصدير البطاقة كصورة --- */
+/* --- Export the card as an image --- */
 $("#imgBtn").addEventListener("click", async ()=>{
-  try{ await document.fonts.ready; }catch(e){}
+  try{ await document.fonts.ready; }catch{}
+  const ar = Lang.is("ar");
   const cv = $("#export"), c = cv.getContext("2d");
   const W = cv.width, H = cv.height, P = 88;
-  const R = W - P;
-  const put = (text, y, {size=32, weight=400, color="#fff", ltr=false} = {})=>{
-    c.direction = ltr ? "ltr" : "rtl";
-    c.textAlign = "right";
+  const X = ar ? W - P : P;
+  const fam = ar ? "'IBM Plex Sans Arabic', sans-serif" : "'IBM Plex Sans', sans-serif";
+
+  const put = (text, y, {size=32, weight=400, color="#fff"} = {})=>{
+    c.direction = ar ? "rtl" : "ltr";
+    c.textAlign = ar ? "right" : "left";
     c.fillStyle = color;
-    c.font = `${weight} ${size}px 'IBM Plex Sans Arabic', sans-serif`;
-    c.fillText(text, R, y);
+    c.font = `${weight} ${size}px ${fam}`;
+    c.fillText(text, X, y);
   };
+  const wrap = (text, y, {size=26, weight=400, color="#fff", lh=40, max=W-P*2} = {})=>{
+    c.font = `${weight} ${size}px ${fam}`;
+    const words = text.split(" ");
+    let line = "", yy = y;
+    for(const w of words){
+      const test = line ? line + " " + w : w;
+      if(c.measureText(test).width > max && line){ put(line, yy, {size, weight, color}); line = w; yy += lh; }
+      else line = test;
+    }
+    if(line){ put(line, yy, {size, weight, color}); yy += lh; }
+    return yy;
+  };
+
   c.fillStyle = "#091F50"; c.fillRect(0,0,W,H);
   const g = c.createRadialGradient(W*.85,0,0,W*.85,0,W*1.1);
   g.addColorStop(0,"rgba(19,44,107,.95)"); g.addColorStop(1,"rgba(9,31,80,0)");
@@ -2682,47 +509,90 @@ $("#imgBtn").addEventListener("click", async ()=>{
   c.fillStyle = "rgba(255,255,255,.045)";
   c.beginPath(); c.moveTo(0,0); c.lineTo(W*.62,0); c.lineTo(0,H*.5); c.closePath(); c.fill();
 
-  const crest = $("#crest");
-  const cw = 118, ch = crest.naturalHeight ? cw * crest.naturalHeight / crest.naturalWidth : 150;
-  try{ c.drawImage(crest, R - cw, P, cw, ch); }catch(e){}
+  /* logo on a white plate */
+  const logo = $("#brandLogo");
+  const lh0 = 150, lw = logo.naturalWidth ? lh0 * logo.naturalWidth / logo.naturalHeight : 190;
+  const padP = 26, plateW = lw + padP*2, plateH = lh0 + padP*2;
+  const plateX = ar ? W - P - plateW : P;
+  c.fillStyle = "#fff";
+  c.beginPath(); c.roundRect(plateX, P, plateW, plateH, 22); c.fill();
+  try{ c.drawImage(logo, plateX + padP, P + padP, lw, lh0); }catch{}
 
-  let y = P + ch + 62;
-  put(ME.orgAr, y, {size:40, weight:600});
-  y += 42; put(ME.orgEn, y, {size:25, color:"#E0C489", ltr:true});
+  let y = P + plateH + 118;
+  put(ar ? ME.fullAr : `${ME.firstEn} ${ME.lastEn}`, y, {size:78, weight:600});
+  y += 52; put(ar ? `${ME.firstEn} ${ME.lastEn}` : ME.fullAr, y, {size:34, color:"rgba(255,255,255,.6)"});
 
-  y += 132; put(ME.fullAr, y, {size:88, weight:700});
-  y += 56; put(`${ME.firstEn} ${ME.lastEn}`, y, {size:36, color:"rgba(255,255,255,.6)", ltr:true});
+  y += 46; c.strokeStyle = "rgba(190,158,88,.65)"; c.lineWidth = 2;
+  c.beginPath(); c.moveTo(X, y); c.lineTo(ar ? X - 280 : X + 280, y); c.stroke();
 
-  y += 44; c.strokeStyle = "rgba(190,158,88,.65)"; c.lineWidth = 2;
-  c.beginPath(); c.moveTo(R, y); c.lineTo(R - 280, y); c.stroke();
-  y += 60; put(ME.titleAr, y, {size:36, weight:500, color:"#E0C489"});
-  y += 44; put(ME.titleEn, y, {size:28, color:"rgba(224,196,137,.8)", ltr:true});
+  y += 62; put(ar ? ME.titleAr : ME.titleEn, y, {size:36, weight:500, color:"#E0C489"});
+  y += 46; put(ar ? ME.orgAr : ME.orgEn, y, {size:28, color:"rgba(255,255,255,.72)"});
 
-  y += 104;
-  [ME.email, "+966 53 161 0076", "+966 14 821 5555 · Ext 1536"].forEach(line=>{
-    put(line, y, {size:31, color:"rgba(255,255,255,.92)", ltr:true}); y += 50;
-  });
+  y += 86;
+  y = wrap(T("We are seeking strategic partnerships and technology collaborations to accelerate digital transformation across our academic and operational ecosystem.",
+             "نسعى إلى شراكات استراتيجية وتعاون تقني يسرّع التحول الرقمي في منظومتنا الأكاديمية والتشغيلية."),
+           y, {size:27, lh:44, color:"rgba(255,255,255,.86)"});
 
-  const tmp = document.createElement("canvas");
-  drawQR(vcardSlim(), tmp, 4);
-  const qs = 300, qy = H - P - qs;
-  c.fillStyle = "#fff"; c.fillRect(P - 16, qy - 16, qs + 32, qs + 32);
-  c.drawImage(tmp, P, qy, qs, qs);
-  put("امسح الكود", qy + 116, {size:30, weight:600, color:"rgba(255,255,255,.9)"});
-  put("لحفظ جهة الاتصال", qy + 160, {size:30, weight:600, color:"rgba(255,255,255,.9)"});
-  put("كليات الريان الأهلية · المدينة المنورة", qy + 236, {size:24, color:"rgba(255,255,255,.45)"});
-  c.fillStyle = "#BE9E58"; c.fillRect(0, H - 14, W, 14);
+  y = H - 330;
+  c.strokeStyle = "rgba(255,255,255,.16)";
+  c.beginPath(); c.moveTo(P, y); c.lineTo(W-P, y); c.stroke();
+  y += 56;
+  const lines = [
+    ME.email,
+    ME.mobileFmt,
+    `${ME.officeFmt} · ${T("ext.", "تحويلة")} ${ME.ext}`,
+    ME.linkedin.replace(/^https:\/\/www\./, "")
+  ];
+  for(const line of lines){
+    c.direction = /[\u0600-\u06FF]/.test(line) && ar ? "rtl" : "ltr";
+    c.textAlign = ar ? "right" : "left";
+    c.fillStyle = "rgba(255,255,255,.85)";
+    c.font = "400 26px 'IBM Plex Sans', sans-serif";
+    c.fillText(line, X, y); y += 42;
+  }
+  put(T("LEAP · Al-Rayan National Colleges", "مؤتمر ليب · كليات الريان الأهلية"), H - 72,
+      {size:24, color:"rgba(224,196,137,.85)"});
 
   cv.toBlob(b=>{
+    const url = URL.createObjectURL(b);
     const a = document.createElement("a");
-    a.href = URL.createObjectURL(b); a.download = "Sara-Almohammadi-card.png";
+    a.href = url; a.download = "Sara-Almohammadi-card.png";
     document.body.appendChild(a); a.click(); a.remove();
-    toast("حُفظت صورة البطاقة");
+    setTimeout(()=>URL.revokeObjectURL(url), 4000);
+    toast(T("Card image saved.", "تم حفظ صورة البطاقة."));
   }, "image/png");
 });
 
-/* روابط ديناميكية من ME */
+/* --- Language --- */
+$("#langBtn").addEventListener("click", ()=> Lang.toggle());
+Lang.onChange(lang=>{
+  $("#langBtn").textContent = lang === "ar" ? "English" : "العربية";
+  if($("#overlay").classList.contains("on")) renderQR();
+});
+Lang.init();
+
+/* --- Dynamic links --- */
 $("#rowMail").href = "mailto:" + ME.email;
+
+/* --- Open counter: recorded once per page view --- */
+(function countOpen(){
+  if(!location.protocol.startsWith("http")) return;
+  let id = "";
+  try{
+    id = localStorage.getItem("card:vid") || "";
+    if(!id){
+      id = crypto.randomUUID ? crypto.randomUUID() : String(Date.now()) + Math.random().toString(16).slice(2);
+      localStorage.setItem("card:vid", id);
+    }
+  }catch{}
+  const src = new URLSearchParams(location.search).get("s") === "qr" ? "qr" : "direct";
+  fetch("/api/count", {
+    method:"POST",
+    headers:{ "Content-Type":"application/json" },
+    body: JSON.stringify({ src, id }),
+    keepalive: true
+  }).catch(()=>{});
+})();
 </script>
 </body>
 </html>
