@@ -10,7 +10,9 @@ representing **Al-Rayan National Colleges**.
 | `api/count.js` | Serverless function that records views (no personal data) |
 | `lang.js` | Bilingual controller (`data-en` / `data-ar` attributes) |
 | `qrcode.js` | QR generator (MIT, Kazuhiko Arase) |
-| `logo.png`, `logo-mark.png` | Institutional logo lockup and shield mark |
+| `logo.png` | Institutional lockup for light backgrounds |
+| `logo-reverse.png` | Reversed lockup — white wordmark, shield colours intact — for the navy hero and the exported image |
+| `logo-mark.png` | Shield mark, used as the favicon |
 | `vercel.json` | Serves `contact.vcf` as `text/vcard` so phones offer "Add to Contacts" |
 | `docs/copy-deck.md` | Approved English and Arabic copy for every section |
 

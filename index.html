@@ -50,8 +50,8 @@ main{max-width:440px;margin:0 auto;min-height:100vh;box-shadow:0 0 60px rgba(11,
              radial-gradient(120% 80% at 100% 0%,rgba(38,72,150,.55),transparent 62%)}
 .hero > *{position:relative;z-index:1}
 .hero-top{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:26px}
-.brand{background:#fff;border-radius:11px;padding:9px 13px;display:inline-flex}
-.brand img{height:52px;width:auto;display:block}
+.brand{display:inline-flex}
+.brand img{height:88px;width:auto;display:block}
 .lang-btn{flex:none;border:1px solid rgba(255,255,255,.3);background:transparent;color:#fff;
   font:inherit;font-size:12.5px;font-weight:500;padding:7px 12px;border-radius:8px;cursor:pointer}
 .lang-btn:hover{background:rgba(255,255,255,.12)}
@@ -74,7 +74,13 @@ h1{margin:0;font-size:31px;line-height:1.2;font-weight:600;letter-spacing:-.02em
 .btn:focus-visible{outline:3px solid var(--navy);outline-offset:2px}
 .btn-main{background:var(--navy);color:#fff}
 .btn-main:hover{background:var(--navy-deep)}
-.btn-line{background:#fff;color:var(--navy);border:1px solid var(--line);font-size:14.5px;font-weight:500}
+.btn-gold{background:var(--gold);color:#20180A}
+.btn-gold:hover{background:#B08F49}
+.btn-line{background:#fff;color:var(--navy);border:1px solid var(--line);font-size:15px;font-weight:500}
+.btn-quiet{background:transparent;color:var(--ink-soft);border:1px solid var(--line);
+  font-size:13.5px;font-weight:500;padding:12px 8px}
+.btn-quiet:hover{color:var(--navy);border-color:#C9C3B4}
+.btn-quiet svg{width:16px;height:16px}
 .btn-line:hover{border-color:#C9C3B4}
 .btn svg{width:18px;height:18px;flex:none}
 .btn-row{display:grid;grid-template-columns:1fr 1fr;gap:10px}
@@ -86,8 +92,6 @@ section{padding:0 var(--shell)}
 :lang(ar) .eyebrow{text-transform:none;letter-spacing:0;font-size:12.5px}
 .eyebrow::after{content:"";flex:1;height:1px;background:var(--line)}
 
-.statement{margin:0;font-size:16.5px;line-height:1.65;font-weight:500;color:var(--navy);letter-spacing:-.01em}
-.statement + .sub{margin:12px 0 0;font-size:14px;line-height:1.75;color:var(--ink-soft)}
 
 .priorities{list-style:none;margin:14px 0 0;padding:0;display:grid;gap:1px;
   background:var(--line);border:1px solid var(--line);border-radius:13px;overflow:hidden}
@@ -159,7 +163,7 @@ bdi{unicode-bidi:isolate}
 
   <header class="hero">
     <div class="hero-top">
-      <span class="brand"><img id="brandLogo" src="logo.png"
+      <span class="brand"><img id="brandLogo" src="logo-reverse.png"
         data-en-attr="alt|Al-Rayan National Colleges" data-ar-attr="alt|كليات الريان الأهلية"
         alt="Al-Rayan National Colleges"></span>
       <button class="lang-btn" id="langBtn" type="button"></button>
@@ -169,11 +173,10 @@ bdi{unicode-bidi:isolate}
     <p class="name-alt" data-en="سارة المحمدي" data-ar="Sara Almohammadi">سارة المحمدي</p>
     <hr class="hr-gold">
     <p class="role" data-en="Software Engineer" data-ar="مهندس برمجيات">Software Engineer</p>
-    <p class="org" data-en="Al-Rayan National Colleges · Madinah, Saudi Arabia"
-       data-ar="كليات الريان الأهلية · المدينة المنورة، المملكة العربية السعودية">Al-Rayan National Colleges · Madinah, Saudi Arabia</p>
+    <p class="org" data-en="Al-Rayan National Colleges" data-ar="كليات الريان الأهلية">Al-Rayan National Colleges</p>
     <p class="purpose"
-       data-en="Attending LEAP for technology partnerships and digital transformation."
-       data-ar="أشارك في مؤتمر ليب للشراكات التقنية والتحول الرقمي.">Attending LEAP for technology partnerships and digital transformation.</p>
+       data-en="Representing Al-Rayan National Colleges at LEAP | Strategic Partnerships & Technology Collaboration"
+       data-ar="ممثلة كليات الريان الأهلية في مؤتمر ليب | الشراكات الاستراتيجية والتعاون التقني">Representing Al-Rayan National Colleges at LEAP | Strategic Partnerships &amp; Technology Collaboration</p>
   </header>
 
   <div class="actions">
@@ -181,69 +184,66 @@ bdi{unicode-bidi:isolate}
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M19 8v6M22 11h-6"/></svg>
       <span data-en="Save Contact" data-ar="حفظ جهة الاتصال">Save Contact</span>
     </a>
+    <a class="btn btn-gold" href="https://amc.edu.sa" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18a15 15 0 0 1 0-18"/></svg>
+      <span data-en="Explore Al-Rayan" data-ar="تعرّف على كليات الريان">Explore Al-Rayan</span>
+    </a>
+    <a class="btn btn-line" href="https://www.linkedin.com/in/sara-almohammadi-470b28178" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9h4v12H3zM10 9h3.8v1.7h.05c.53-.95 1.83-1.95 3.77-1.95 4.03 0 4.78 2.5 4.78 5.76V21h-4v-5.7c0-1.36-.03-3.1-1.95-3.1-1.95 0-2.25 1.47-2.25 3v5.8h-4Z"/></svg>
+      <span data-en="Connect on LinkedIn" data-ar="التواصل عبر لينكدإن">Connect on LinkedIn</span>
+    </a>
     <div class="btn-row">
-      <a class="btn btn-line" href="https://www.linkedin.com/in/sara-almohammadi-470b28178" target="_blank" rel="noopener">
-        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9h4v12H3zM10 9h3.8v1.7h.05c.53-.95 1.83-1.95 3.77-1.95 4.03 0 4.78 2.5 4.78 5.76V21h-4v-5.7c0-1.36-.03-3.1-1.95-3.1-1.95 0-2.25 1.47-2.25 3v5.8h-4Z"/></svg>
-        <span data-en="LinkedIn" data-ar="لينكدإن">LinkedIn</span>
-      </a>
-      <button class="btn btn-line" id="qrBtn" type="button">
+      <button class="btn btn-quiet" id="qrBtn" type="button">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><path d="M14 14h3v3h-3zM20 14v.01M14 20v.01M20 20v.01M17 20v.01"/></svg>
-        <span data-en="Share" data-ar="مشاركة">Share</span>
+        <span data-en="Share QR code" data-ar="مشاركة الرمز">Share QR code</span>
       </button>
+      <button class="btn btn-quiet" id="imgBtn" type="button"
+        data-en="Save as image" data-ar="حفظ كصورة">Save as image</button>
     </div>
   </div>
 
   <section>
-    <h2 class="eyebrow" data-en="At LEAP" data-ar="في مؤتمر ليب">At LEAP</h2>
-    <p class="statement"
-       data-en="We partner with technology leaders to advance digital transformation across health sciences education."
-       data-ar="نبني شراكات مع قادة التقنية لدفع التحول الرقمي في تعليم العلوم الصحية.">We partner with technology leaders to advance digital transformation across health sciences education.</p>
-    <p class="sub"
-       data-en="Our focus is long-term collaboration across infrastructure, cybersecurity, artificial intelligence, and education technology."
-       data-ar="نركّز على تعاون طويل الأمد في البنية التحتية والأمن السيبراني والذكاء الاصطناعي وتقنيات التعليم.">Our focus is long-term collaboration across infrastructure, cybersecurity, artificial intelligence, and education technology.</p>
-  </section>
-
-  <section>
-    <h2 class="eyebrow" data-en="Collaboration Priorities" data-ar="أولويات التعاون">Collaboration Priorities</h2>
-    <ul class="priorities">
-      <li>
-        <span class="h" data-en="Infrastructure and Cybersecurity" data-ar="البنية التحتية والأمن السيبراني">Infrastructure and Cybersecurity</span>
-        <span class="d" data-en="Modernizing campus technology infrastructure, strengthening our cybersecurity posture, and meeting applicable regulatory standards."
-              data-ar="تحديث البنية التقنية للحرم الجامعي، وتعزيز منظومة الأمن السيبراني، والامتثال للمعايير التنظيمية ذات العلاقة.">Modernizing campus technology infrastructure, strengthening our cybersecurity posture, and meeting applicable regulatory standards.</span>
-      </li>
-      <li>
-        <span class="h" data-en="Artificial Intelligence" data-ar="الذكاء الاصطناعي">Artificial Intelligence</span>
-        <span class="d" data-en="Adopting AI-enabled solutions that transform learning, streamline operations, and enhance the student experience."
-              data-ar="تبنّي حلول الذكاء الاصطناعي لتطوير التعليم، ورفع كفاءة العمليات، وتحسين تجربة الطالب.">Adopting AI-enabled solutions that transform learning, streamline operations, and enhance the student experience.</span>
-      </li>
-      <li>
-        <span class="h" data-en="Education Technology" data-ar="تقنيات التعليم">Education Technology</span>
-        <span class="d" data-en="Digital learning platforms, assessment technology, and classroom systems for health sciences programs."
-              data-ar="منصات التعلم الرقمي وتقنيات التقييم وأنظمة القاعات لبرامج العلوم الصحية.">Digital learning platforms, assessment technology, and classroom systems for health sciences programs.</span>
-      </li>
-      <li>
-        <span class="h" data-en="Capability Building" data-ar="بناء القدرات">Capability Building</span>
-        <span class="d" data-en="Professional certification, training programs, and workshops for academic, administrative, and technical teams."
-              data-ar="الشهادات المهنية والبرامج التدريبية وورش العمل للكوادر الأكاديمية والإدارية والتقنية.">Professional certification, training programs, and workshops for academic, administrative, and technical teams.</span>
-      </li>
-    </ul>
-  </section>
-
-  <section>
-    <h2 class="eyebrow" data-en="The Institution" data-ar="عن المؤسسة">The Institution</h2>
+    <h2 class="eyebrow" data-en="About Al-Rayan National Colleges" data-ar="عن كليات الريان الأهلية">About Al-Rayan National Colleges</h2>
     <p class="institution"
-       data-en="Al-Rayan National Colleges is a private higher education institution in Madinah, Saudi Arabia, specializing in health sciences education across three colleges."
-       data-ar="كليات الريان الأهلية مؤسسة تعليم عالٍ أهلية في المدينة المنورة، متخصصة في تعليم العلوم الصحية عبر ثلاث كليات.">Al-Rayan National Colleges is a private higher education institution in Madinah, Saudi Arabia, specializing in health sciences education across three colleges.</p>
+       data-en="Al-Rayan National Colleges is a higher education institution in Madinah comprising three colleges: Nursing, Medicine, and Health Sciences, with programs in Anesthesia and Pharmacy."
+       data-ar="كليات الريان الأهلية مؤسسة تعليم عالٍ في المدينة المنورة تضم ثلاث كليات: التمريض، والطب، والعلوم الصحية، وتشمل برامج التخدير والصيدلة.">Al-Rayan National Colleges is a higher education institution in Madinah comprising three colleges: Nursing, Medicine, and Health Sciences, with programs in Anesthesia and Pharmacy.</p>
     <ul class="chips">
       <li data-en="College of Nursing" data-ar="كلية التمريض">College of Nursing</li>
       <li data-en="College of Medicine" data-ar="كلية الطب">College of Medicine</li>
       <li><span data-en="College of Health Sciences" data-ar="كلية العلوم الصحية">College of Health Sciences</span>
         <span class="sub" data-en="Anesthesia · Pharmacy" data-ar="التخدير · الصيدلة">Anesthesia · Pharmacy</span></li>
     </ul>
-    <a class="website" href="https://amc.edu.sa" target="_blank" rel="noopener">
-      <span data-en="amc.edu.sa" data-ar="amc.edu.sa">amc.edu.sa</span>
-      <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg>
-    </a>
+  </section>
+
+  <section>
+    <h2 class="eyebrow" data-en="Strategic Collaboration Areas" data-ar="مجالات التعاون الاستراتيجي">Strategic Collaboration Areas</h2>
+    <ul class="priorities">
+      <li>
+        <span class="h" data-en="Digital Infrastructure &amp; Transformation" data-ar="البنية التحتية الرقمية والتحول الرقمي">Digital Infrastructure &amp; Transformation</span>
+        <span class="d" data-en="Modernizing campus infrastructure, systems, and network capabilities."
+              data-ar="تحديث البنية التحتية للحرم الجامعي والأنظمة وقدرات الشبكة.">Modernizing campus infrastructure, systems, and network capabilities.</span>
+      </li>
+      <li>
+        <span class="h" data-en="Cybersecurity &amp; Compliance" data-ar="الأمن السيبراني والامتثال">Cybersecurity &amp; Compliance</span>
+        <span class="d" data-en="Strengthening cybersecurity capabilities and alignment with relevant requirements and standards."
+              data-ar="تعزيز قدرات الأمن السيبراني والتوافق مع المتطلبات والمعايير ذات العلاقة.">Strengthening cybersecurity capabilities and alignment with relevant requirements and standards.</span>
+      </li>
+      <li>
+        <span class="h" data-en="AI &amp; Emerging Technologies" data-ar="الذكاء الاصطناعي والتقنيات الناشئة">AI &amp; Emerging Technologies</span>
+        <span class="d" data-en="Exploring AI-enabled solutions to enhance education, operational efficiency, and the student experience."
+              data-ar="استكشاف حلول الذكاء الاصطناعي لتحسين التعليم وكفاءة العمليات وتجربة الطالب.">Exploring AI-enabled solutions to enhance education, operational efficiency, and the student experience.</span>
+      </li>
+      <li>
+        <span class="h" data-en="EdTech &amp; Digital Learning" data-ar="تقنيات التعليم والتعلم الرقمي">EdTech &amp; Digital Learning</span>
+        <span class="d" data-en="Collaborating on modern educational technologies, digital learning platforms, and technology-enabled learning experiences."
+              data-ar="التعاون في تقنيات التعليم الحديثة ومنصات التعلم الرقمي وتجارب التعلم المدعومة بالتقنية.">Collaborating on modern educational technologies, digital learning platforms, and technology-enabled learning experiences.</span>
+      </li>
+      <li>
+        <span class="h" data-en="Talent Development &amp; Professional Training" data-ar="تطوير الكفاءات والتدريب المهني">Talent Development &amp; Professional Training</span>
+        <span class="d" data-en="Supporting professional certifications, specialized training, workshops, and capability development for faculty, staff, engineers, and students."
+              data-ar="دعم الشهادات المهنية والتدريب المتخصص وورش العمل وبناء القدرات لأعضاء هيئة التدريس والموظفين والمهندسين والطلاب.">Supporting professional certifications, specialized training, workshops, and capability development for faculty, staff, engineers, and students.</span>
+      </li>
+    </ul>
   </section>
 
   <section>
@@ -283,8 +283,7 @@ bdi{unicode-bidi:isolate}
 
   <p class="foot">
     <span data-en="Al-Rayan National Colleges" data-ar="كليات الريان الأهلية">Al-Rayan National Colleges</span><br>
-    <span data-en="Madinah, Saudi Arabia" data-ar="المدينة المنورة، المملكة العربية السعودية">Madinah, Saudi Arabia</span><br>
-    <button class="mini" id="imgBtn" type="button" data-en="Save card as image" data-ar="حفظ البطاقة كصورة">Save card as image</button>
+    <span data-en="Madinah, Saudi Arabia" data-ar="المدينة المنورة، المملكة العربية السعودية">Madinah, Saudi Arabia</span>
   </p>
 </main>
 
@@ -457,14 +456,10 @@ $("#imgBtn").addEventListener("click", async ()=>{
   c.beginPath(); c.moveTo(0,0); c.lineTo(W*.6,0); c.lineTo(0,H*.46); c.closePath(); c.fill();
 
   const logo = $("#brandLogo");
-  const lgH = 140, lgW = logo.naturalWidth ? lgH * logo.naturalWidth / logo.naturalHeight : 178;
-  const pad = 24, plateW = lgW + pad*2, plateH = lgH + pad*2;
-  const plateX = ar ? W - P - plateW : P;
-  c.fillStyle = "#fff";
-  c.beginPath(); c.roundRect(plateX, P, plateW, plateH, 20); c.fill();
-  try{ c.drawImage(logo, plateX + pad, P + pad, lgW, lgH); }catch{}
+  const lgH = 168, lgW = logo.naturalWidth ? lgH * logo.naturalWidth / logo.naturalHeight : 214;
+  try{ c.drawImage(logo, ar ? W - P - lgW : P, P, lgW, lgH); }catch{}
 
-  let y = P + plateH + 120;
+  let y = P + lgH + 132;
   put(ar ? ME.fullAr : `${ME.firstEn} ${ME.lastEn}`, y, {size:76, weight:600});
   y += 50; put(ar ? `${ME.firstEn} ${ME.lastEn}` : ME.fullAr, y, {size:32, color:"rgba(255,255,255,.58)"});
 
@@ -475,9 +470,29 @@ $("#imgBtn").addEventListener("click", async ()=>{
   y += 48; put(ar ? ME.orgAr : ME.orgEn, y, {size:29, color:"rgba(255,255,255,.78)"});
 
   y += 88;
-  wrap(T("We partner with technology leaders to advance digital transformation across health sciences education.",
-         "نبني شراكات مع قادة التقنية لدفع التحول الرقمي في تعليم العلوم الصحية."),
+  y = wrap(T("Representing Al-Rayan National Colleges at LEAP | Strategic Partnerships & Technology Collaboration",
+         "ممثلة كليات الريان الأهلية في مؤتمر ليب | الشراكات الاستراتيجية والتعاون التقني"),
        y, {size:28, lh:46, color:"rgba(255,255,255,.88)"});
+
+  /* collaboration areas — makes the image useful as a leave-behind */
+  y += 34;
+  put(T("Strategic Collaboration Areas", "مجالات التعاون الاستراتيجي"), y,
+      {size:22, weight:600, color:"rgba(190,158,88,.95)"});
+  y += 46;
+  const areas = T(
+    ["Digital Infrastructure & Transformation","Cybersecurity & Compliance","AI & Emerging Technologies",
+     "EdTech & Digital Learning","Talent Development & Professional Training"],
+    ["البنية التحتية الرقمية والتحول الرقمي","الأمن السيبراني والامتثال","الذكاء الاصطناعي والتقنيات الناشئة",
+     "تقنيات التعليم والتعلم الرقمي","تطوير الكفاءات والتدريب المهني"]);
+  for(const a of areas){
+    c.fillStyle = "rgba(190,158,88,.9)";
+    c.beginPath(); c.arc(ar ? X - 7 : X + 7, y - 9, 4, 0, Math.PI*2); c.fill();
+    c.direction = ar ? "rtl" : "ltr"; c.textAlign = ar ? "right" : "left";
+    c.fillStyle = "rgba(255,255,255,.86)";
+    c.font = `400 25px ${fam}`;
+    c.fillText(a, ar ? X - 24 : X + 24, y);
+    y += 42;
+  }
 
   y = H - 300;
   c.strokeStyle = "rgba(255,255,255,.18)"; c.lineWidth = 1;
@@ -486,11 +501,11 @@ $("#imgBtn").addEventListener("click", async ()=>{
   const lines = [
     ME.email,
     ME.mobileFmt,
-    `${ME.officeFmt} · ${T("ext.","تحويلة")} ${ME.ext}`,
+    T(`${ME.officeFmt} · ext. ${ME.ext}`, `${ME.officeFmt} · ${ME.ext} تحويلة`),
     ME.linkedin.replace(/^https:\/\/www\./, "")
   ];
   for(const line of lines){
-    c.direction = /[؀-ۿ]/.test(line) && ar ? "rtl" : "ltr";
+    c.direction = "ltr";                      // phone groups must not be reordered
     c.textAlign = ar ? "right" : "left";
     c.fillStyle = "rgba(255,255,255,.86)";
     c.font = "400 26px 'IBM Plex Sans', sans-serif";

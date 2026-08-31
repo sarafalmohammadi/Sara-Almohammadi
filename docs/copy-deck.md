@@ -6,46 +6,44 @@ English is the primary version. Arabic is an equivalent register, not a literal 
 | --- | --- | --- |
 | Name | Sara Almohammadi | سارة المحمدي |
 | Title | Software Engineer | مهندس برمجيات |
-| Organization | Al-Rayan National Colleges · Madinah, Saudi Arabia | كليات الريان الأهلية · المدينة المنورة، المملكة العربية السعودية |
-| Purpose | Attending LEAP for technology partnerships and digital transformation. | أشارك في مؤتمر ليب للشراكات التقنية والتحول الرقمي. |
-
-## At LEAP — positioning
-**We partner with technology leaders to advance digital transformation across health sciences
-education.**
-Our focus is long-term collaboration across infrastructure, cybersecurity, artificial intelligence,
-and education technology.
-
-نبني شراكات مع قادة التقنية لدفع التحول الرقمي في تعليم العلوم الصحية.
-نركّز على تعاون طويل الأمد في البنية التحتية والأمن السيبراني والذكاء الاصطناعي وتقنيات التعليم.
-
-> Positions the institution as a partner with an agenda, not a buyer shopping for vendors.
-
-## Collaboration priorities (four groups, covering all eight areas)
-1. **Infrastructure and Cybersecurity** — Modernizing campus technology infrastructure,
-   strengthening our cybersecurity posture, and meeting applicable regulatory standards.
-2. **Artificial Intelligence** — Adopting AI-enabled solutions that transform learning, streamline
-   operations, and enhance the student experience.
-3. **Education Technology** — Digital learning platforms, assessment technology, and classroom
-   systems for health sciences programs.
-4. **Capability Building** — Professional certification, training programs, and workshops for
-   academic, administrative, and technical teams.
-
-## The institution
-Al-Rayan National Colleges is a private higher education institution in Madinah, Saudi Arabia,
-specializing in health sciences education across three colleges.
-College of Nursing · College of Medicine · College of Health Sciences (Anesthesia · Pharmacy)
-Website: amc.edu.sa
+| Organization | Al-Rayan National Colleges | كليات الريان الأهلية |
+| Line | Representing Al-Rayan National Colleges at LEAP \| Strategic Partnerships & Technology Collaboration | ممثلة كليات الريان الأهلية في مؤتمر ليب \| الشراكات الاستراتيجية والتعاون التقني |
 
 ## Actions
-Save Contact (primary) · LinkedIn · Share · Copy email · Save card as image
+Save Contact (primary) · Explore Al-Rayan → amc.edu.sa · Connect on LinkedIn · Share QR code · Save as image
+
+## About Al-Rayan National Colleges
+Al-Rayan National Colleges is a higher education institution in Madinah comprising three colleges:
+Nursing, Medicine, and Health Sciences, with programs in Anesthesia and Pharmacy.
+
+كليات الريان الأهلية مؤسسة تعليم عالٍ في المدينة المنورة تضم ثلاث كليات: التمريض، والطب، والعلوم الصحية،
+وتشمل برامج التخدير والصيدلة.
+
+College of Nursing · College of Medicine · College of Health Sciences (Anesthesia · Pharmacy)
+
+## Strategic Collaboration Areas
+1. **Digital Infrastructure & Transformation** — Modernizing campus infrastructure, systems, and
+   network capabilities.
+2. **Cybersecurity & Compliance** — Strengthening cybersecurity capabilities and alignment with
+   relevant requirements and standards.
+3. **AI & Emerging Technologies** — Exploring AI-enabled solutions to enhance education,
+   operational efficiency, and the student experience.
+4. **EdTech & Digital Learning** — Collaborating on modern educational technologies, digital
+   learning platforms, and technology-enabled learning experiences.
+5. **Talent Development & Professional Training** — Supporting professional certifications,
+   specialized training, workshops, and capability development for faculty, staff, engineers, and
+   students.
 
 ## Share sheet
 - Profile code: **Scan to open my profile** — Opens this card, with the option to save my contact details.
 - Offline code: **Offline contact code** — Adds my contact details directly, without an internet connection.
 
-## Terminology rules
-- "Al-Rayan National Colleges" in full on first use; never "the colleges" in headings.
-- "LEAP" unqualified — no year, city, or hall claimed.
-- Title case for section headings and buttons; sentence case for descriptions.
-- Never "scan the barcode"; the code is a *QR code* and the invitation is *Scan to open my profile*.
+## Rules
+- "Exploring AI-enabled solutions", never "driving" or "leading" AI adoption — the stronger verb is
+  a claim the institution has not made.
+- No procurement register: no "institutional scope", "engagement framework", or "single point of
+  coordination". The card invites a conversation; it is not an RFP.
+- "Al-Rayan National Colleges" in full; "LEAP" unqualified — no year, hall, or city claimed.
+- Title case for headings and buttons, sentence case for descriptions.
+- Never "scan the barcode". The invitation is *Scan to open my profile*.
 - No claims about existing partnerships, deployments, budgets, or achievements.
