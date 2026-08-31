@@ -1,0 +1,15 @@
+BEGIN:VCARD
+VERSION:3.0
+N;CHARSET=UTF-8:Almohammadi;Sara;;;
+FN;CHARSET=UTF-8:Sara Almohammadi
+NICKNAME;CHARSET=UTF-8:سارة المحمدي
+ORG;CHARSET=UTF-8:Al-Rayan National Colleges
+TITLE;CHARSET=UTF-8:Software Engineer
+TEL;TYPE=CELL,VOICE:+966531610076
+TEL;TYPE=WORK,VOICE:+966148215555
+EMAIL;TYPE=INTERNET,WORK:sf.almohammadi@amc.edu.sa
+ADR;TYPE=WORK;CHARSET=UTF-8:;;Hijrah Street;Madinah;;41411;Saudi Arabia
+URL:https://www.linkedin.com/in/sara-almohammadi-470b28178
+URL:https://amc.edu.sa
+NOTE;CHARSET=UTF-8:Al-Rayan National Colleges — Software Engineer. Office extension 1536.
+END:VCARD
