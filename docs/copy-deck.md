@@ -13,11 +13,11 @@ English is the primary version. Arabic is an equivalent register, not a literal 
 Save Contact (primary) · Explore Al-Rayan → amc.edu.sa · Connect on LinkedIn · Share QR code · Save as image
 
 ## About Al-Rayan National Colleges
-Al-Rayan National Colleges is a higher education institution in Madinah comprising three colleges:
-Nursing, Medicine, and Health Sciences, with programs in Anesthesia and Pharmacy.
+Al-Rayan National Colleges is based in Madinah and comprises three colleges: Nursing, Medicine, and
+Health Sciences, with programs in Anesthesia and Pharmacy.
 
-كليات الريان الأهلية مؤسسة تعليم عالٍ في المدينة المنورة تضم ثلاث كليات: التمريض، والطب، والعلوم الصحية،
-وتشمل برامج التخدير والصيدلة.
+كليات الريان الأهلية في المدينة المنورة، وتضم ثلاث كليات: التمريض، والطب، والعلوم الصحية، وتشمل برامج
+التخدير والصيدلة.
 
 College of Nursing · College of Medicine · College of Health Sciences (Anesthesia · Pharmacy)
 
@@ -47,3 +47,5 @@ College of Nursing · College of Medicine · College of Health Sciences (Anesthe
 - Title case for headings and buttons, sentence case for descriptions.
 - Never "scan the barcode". The invitation is *Scan to open my profile*.
 - No claims about existing partnerships, deployments, budgets, or achievements.
+- Never classify the institution ("higher education institution", "مؤسسة تعليم عالٍ", "university",
+  "academy"). State the name, the city, and the three colleges — nothing beyond that.
